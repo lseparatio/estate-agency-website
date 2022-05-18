@@ -1,5 +1,6 @@
 # Added my VENV to gitignore
 real-estate-env
+env.py
 
 #GitIgnore Is Created With GitHub Template For Python, i wanted to test it :) 
 
