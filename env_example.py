@@ -1,4 +1,8 @@
-
 import os
 
-os.environ["SECRET_KEY"]= 'add your secret key'
+os.environ.setdefault('SECRET_KEY', 'add a security key here')
+
+#Turn on of DEBUG. If True debug wil be On if False,
+#Empty or anything else will be False.
+
+os.environ.setdefault('DEVELOPMENT', 'True')
