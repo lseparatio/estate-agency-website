@@ -23,12 +23,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css"
         crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
+        integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     {% endblock %}
 
     {% block extra_css %}
     {% endblock %}
 
     {% block corejs %}
+    <script src="https://kit.fontawesome.com/0ea0c1e734.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js"
         crossorigin="anonymous"></script>
     {% endblock %}
@@ -40,6 +44,46 @@
 </head>
 
 <body>
+    <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Real Estate</div>
+    </div>
+
+    <div class="top-bar" id="example-menu">
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">Real Estate</li>
+                <li class="has-submenu">
+                    <a href="#0">One</a>
+                    <ul class="submenu menu vertical" data-submenu>
+                        <li><a href="#0">One</a></li>
+                        <li><a href="#0">Two</a></li>
+                        <li><a href="#0">Three</a></li>
+                    </ul>
+                </li>
+                <li><a href="#0">Two</a></li>
+                <li><a href="#0">Three</a></li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><input type="search" placeholder="Search"></li>
+                <li><button type="button" class="button">Search</button></li>
+            </ul>
+        </div>
+    </div>
+    {% include 'includes/mobile-top-header.html' %}
+    {% include 'includes/main-nav.html' %}
+
+    {% if messages %}
+    <div class="grid-container page-toasts">
+        {% for message in messages %}
+        <script type=text/javascript>$(document).ready(function onDocumentReady() {toastr.{{ message.tags }}('{{ message }}')});
+        </script>
+        {% endfor %}
+    </div>
+    {% endif %}
+
     {% block page_header %}
     {% endblock %}
 
@@ -47,9 +91,11 @@
     {% endblock %}
 
     {% block postloadjs %}
-    <script>
-        $(document).foundation();
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"
+        integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script> $(document).foundation(); </script>
+    <script src="{% static 'js/base.js' %}"></script>
     {% endblock %}
 
 </body>
