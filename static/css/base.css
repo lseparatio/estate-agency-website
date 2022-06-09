@@ -1,0 +1,15 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/static/img/pexels-binyamin-mellish-186077.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+}
+
+header,
+nav {
+    background-color: rgba(0, 40, 64, 0.15);
+}
