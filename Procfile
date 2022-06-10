@@ -1,1 +1,1 @@
-web: gunicorn myproject.wsgi
+web: gunicorn estate_agency.wsgi:application
