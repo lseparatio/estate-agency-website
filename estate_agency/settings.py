@@ -124,17 +124,12 @@ WSGI_APPLICATION = 'estate_agency.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#       'NAME': BASE_DIR / 'db.sqlite3',
-#   }
-#}
-
 DATABASES = {
-    'default': dj_database_url.parse('postgres://bniqmmqsapyfys:588399269677a62fbbe726f0af072ef48d5925b00d3987fe6c632c2e744ebda9@ec2-54-228-218-84.eu-west-1.compute.amazonaws.com:5432/d8lqignons2c6g')
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
-
 
 
 # Password validation
