@@ -28,3 +28,7 @@ nav {
 .navbar-light .navbar-toggler {
     border: 1px solid white;
 }
+
+#navbarSupportedContent ul li a {
+    color: white;
+}
