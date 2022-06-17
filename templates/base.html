@@ -8,6 +8,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Let in agency!">
   {% endblock %}
 
   {% block extra_meta %}
@@ -45,18 +46,18 @@
     <nav class="navbar navbar-expand-lg navbar-light w-100">
       <div class="container-fluid">
         <a class="navbar-brand" href="{% url 'home' %}"><img src="/static/img/real-estate-logo.png" alt="" width="70"
-            height="50" class="d-inline-block align-text-right"></a>
+            height="50" class="d-inline-block align-text-right" aria-label="Site Logo"></a>
         <ul class="list-inline list-unstyled text-center text-lg-right my-0  d-lg-none">
           <li class="list-inline-item">
             <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="offcanvas"
-              data-bs-target="#searchSidebar" aria-controls="searchSidebar" id="searchSidebarButton"><i
+              data-bs-target="#searchSidebar" aria-controls="searchSidebar" aria-label="Search" id="search-button"><i
                 class="fa-solid fa-magnifying-glass"></i>
             </button>
           </li>
           <li class="list-inline-item">
             <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="offcanvas"
-              data-bs-target="#loginSidebar" aria-controls="loginSidebar" id="loginSidebarButton"><i
-                class="fa-regular fa-user"></i>
+              data-bs-target="#loginSidebar" aria-controls="loginSidebar" aria-label="Account - Login - Register"
+              id="account-button"><i class="fa-regular fa-user"></i>
             </button>
           </li>
         </ul>

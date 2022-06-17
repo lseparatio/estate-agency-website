@@ -14,8 +14,10 @@ nav {
     background-color: rgba(0, 40, 64, 0.15);
 }
 
-#loginSidebarButton,
-#searchSidebarButton {
+#search-button,
+#account-button,
+#login-button-desktop,
+#search-button-desktop {
     background-color: rgba(0, 0, 0, 0);
     border-color: rgba(0, 0, 0, 0);
     box-shadow: none;
