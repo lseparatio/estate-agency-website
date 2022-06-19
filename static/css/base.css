@@ -77,3 +77,14 @@ nav {
 .center {
     text-align: center;
 }
+
+#pills-login-tab.active,
+#pills-register-tab.active {
+    background-color: #cd994f !important;
+    color: white !important;
+}
+
+#pills-login-tab,
+#pills-register-tab {
+    color: #cd994f !important;
+}
