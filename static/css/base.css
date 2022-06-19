@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/static/img/pexels-binyamin-mellish-186077.jpg') no-repeat center center fixed;
+    background: url('/static/img/pexels-binyamin-mellish-186078.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -35,8 +35,9 @@ nav {
     color: white;
 }
 
-#loginSidebar {
-    border: blue 2px solid;
+#loginSidebar,
+.nav-canava-colapsed {
+    border: #cd994f 2px solid;
     border-radius: 25px;
 }
 
@@ -47,4 +48,32 @@ nav {
 
 .second-nav ul li a {
     color: white !important;
+}
+
+.nav-mobile-canava {
+    text-align: center;
+}
+
+.nav-mobile-canava ul li a {
+    color: #cd994f !important;
+}
+
+#menu-hr {
+    border: 5px solid #cd994f;
+    color: #cd994f;
+    border-radius: 5px;
+}
+
+.btn-contact {
+    background-color: #cd994f;
+    color: white;
+}
+
+.link-unstiled {
+    color: #cd994f;
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
 }
