@@ -34,3 +34,17 @@ nav {
 #navbarSupportedContent ul li a {
     color: white;
 }
+
+#loginSidebar {
+    border: blue 2px solid;
+    border-radius: 25px;
+}
+
+.second-nav {
+    background-color: #cd994f !important;
+    color: white !important;
+}
+
+.second-nav ul li a {
+    color: white !important;
+}
