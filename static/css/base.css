@@ -64,9 +64,10 @@ nav {
     border-radius: 5px;
 }
 
-.btn-contact {
-    background-color: #cd994f;
-    color: white;
+.btn-contact,
+.btn-book-evaluation {
+    background-color: #cd994f !important;
+    color: white !important;
 }
 
 .link-unstiled {
@@ -87,4 +88,16 @@ nav {
 #pills-login-tab,
 #pills-register-tab {
     color: #cd994f !important;
+}
+
+.welcome {
+    padding-top: 10vh;
+}
+
+.welcome h1 {
+    color: white;
+}
+
+.padding-top {
+    padding-top: 3vh;
 }
