@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #cd994f;
+    --nav-background: rgba(0, 40, 64, 0.15);
+    --primary-text: white;
+  }
+
 html {
     height: 100%;
 }
@@ -11,7 +17,7 @@ body {
 
 header,
 nav {
-    background-color: rgba(0, 40, 64, 0.15);
+    background-color: var(--nav-background);
 }
 
 #search-button,
@@ -28,26 +34,28 @@ nav {
 }
 
 .navbar-light .navbar-toggler {
-    border: 1px solid white;
+    border: 1px solid var(--primary-text);
 }
 
 #navbarSupportedContent ul li a {
-    color: white;
+    color: var(--primary-text);
 }
 
 #loginSidebar,
-.nav-canava-colapsed {
-    border: #cd994f 2px solid;
+.nav-canava-colapsed,
+#bookValuation,
+#searchSidebar {
+    border: var(--primary-color) 2px solid;
     border-radius: 25px;
 }
 
 .second-nav {
-    background-color: #cd994f !important;
-    color: white !important;
+    background-color: var(--primary-color) !important;
+    color: var(--primary-text) !important;
 }
 
 .second-nav ul li a {
-    color: white !important;
+    color: var(--primary-text) !important;
 }
 
 .nav-mobile-canava {
@@ -55,23 +63,23 @@ nav {
 }
 
 .nav-mobile-canava ul li a {
-    color: #cd994f !important;
+    color: var(--primary-color) !important;
 }
 
 #menu-hr {
-    border: 5px solid #cd994f;
-    color: #cd994f;
+    border: 5px solid var(--primary-color);
+    color: var(--primary-color);
     border-radius: 5px;
 }
 
 .btn-contact,
 .btn-book-evaluation {
-    background-color: #cd994f !important;
-    color: white !important;
+    background-color: var(--primary-color) !important;
+    color: var(--primary-text) !important;
 }
 
 .link-unstiled {
-    color: #cd994f;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -80,24 +88,40 @@ nav {
 }
 
 #pills-login-tab.active,
-#pills-register-tab.active {
-    background-color: #cd994f !important;
-    color: white !important;
+#pills-register-tab.active,
+#pills-selling-tab.active,
+#pills-letting-tab.active {
+    background-color: var(--primary-color) !important;
+    color: var(--primary-text) !important;
 }
 
 #pills-login-tab,
-#pills-register-tab {
-    color: #cd994f !important;
+#pills-register-tab,
+#pills-selling-tab,
+#pills-letting-tab {
+    color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color);
 }
 
 .welcome {
     padding-top: 10vh;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .welcome h1 {
-    color: white;
+    color: var(--primary-text);
 }
 
 .padding-top {
     padding-top: 3vh;
+}
+
+/*
+This is the color of close button. To manipulate search for fill: and change
+%23 -meanig '#' and : cd994f your prefered HEX color
+*/
+.btn-close {
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23cd994f'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
 }
