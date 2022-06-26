@@ -1,5 +1,6 @@
 {% load i18n %}
 {% load account socialaccount %}
+{% load account %}
 <div class="offcanvas offcanvas-end" tabindex="-1" id="loginSidebar" aria-labelledby="loginSidebar">
     <div class="offcanvas-header">
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -20,8 +21,15 @@
             <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
                 Login Form
             </div>
-            <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="pills-register-tab">Register
-                Form</div>
+            <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="pills-register-tab"><form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+                {% csrf_token %}
+                {{ form.as_p }}
+                {% if redirect_field_value %}
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                {% endif %}
+                <button type="submit">{% trans "Sign Up" %} &raquo;</button>
+              </form></div>
+               
         </div>
 
 

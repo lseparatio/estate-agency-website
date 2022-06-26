@@ -54,8 +54,14 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'home',
+    'accounts',
     # ... include the providers social you want to enable:
 ]
+
+
+ACCOUNT_FORMS = {
+'signup': 'accounts.forms.CustomSignupForm',
+}
 
 SITE_ID = 1
 
