@@ -20,6 +20,10 @@ nav {
     background-color: var(--nav-background);
 }
 
+.display-none {
+    display: none !important;
+}
+
 #search-button,
 #account-button,
 #login-button-desktop,
