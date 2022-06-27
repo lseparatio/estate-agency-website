@@ -103,7 +103,8 @@ nav {
     border: 1px solid var(--primary-color) !important;
 }
 
-#pills-register p {
+#pills-register p,
+#pills-login p {
     color: var(--primary-color);
 }
 
@@ -130,12 +131,14 @@ This is the color of close button. To manipulate search for fill: and change
     background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23cd994f'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
 }
 
-.register-button {
+.register-button,
+.login-button {
     background-color: var(--primary-color) !important;
     border-color: var(--primary-color) !important;
 }
 
-.register-button:hover {
+.register-button:hover,
+.login-button:hover {
     background-color: var(--primary-text) !important;
     color: var(--primary-color) !important;
     border-color: var(--primary-color) !important;

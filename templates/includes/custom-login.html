@@ -1,0 +1,22 @@
+<form class="signup" id="signup_form" method="post" action="{% url 'account_login' %}">
+    {% csrf_token %}
+    {% if redirect_field_value %}
+    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% endif %}
+    <div class="form-row">
+        <div class="form-group">
+            <label for="id_login">Username or e-mail:</label>
+            <input type="text" class="form-control" id="id_login" minlength="4" maxlength="150" name="login"
+                placeholder="Username or e-mail" autocomplete="email" required>
+        </div>
+        <div class="form-group">
+            <label for="id_password">Password:</label>
+            <input type="password" class="form-control" id="id_password" autocomplete="current-password" name="password" placeholder="Password" required>
+        </div>
+    </div>
+    <div class="form-row pt-2">
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary col-12 login-button pt-2">Login</button>
+        </div>
+    </div>
+</form>
