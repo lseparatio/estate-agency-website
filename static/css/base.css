@@ -2,6 +2,8 @@
     --primary-color: #cd994f;
     --nav-background: rgba(0, 40, 64, 0.15);
     --primary-text: white;
+    --forms-shadow: rgba(0, 40, 64, 0.5);
+    --buttons-text: #120909;
 }
 
 html {
@@ -136,16 +138,17 @@ This is the color of close button. To manipulate search for fill: and change
 }
 
 .register-button,
-.login-button {
+.login-button,
+.forgot-button {
     background-color: var(--primary-color) !important;
     border-color: var(--primary-color) !important;
+    color: var(--buttons-text)
 }
 
 .register-button:hover,
-.login-button:hover {
-    background-color: var(--primary-text) !important;
-    color: var(--primary-color) !important;
-    border-color: var(--primary-color) !important;
+.login-button:hover,
+.forgot-button:hover {
+    color: var(--primary-text) !important;
 }
 
 #signup_form {
@@ -161,4 +164,21 @@ This is the color of close button. To manipulate search for fill: and change
     border: 2px solid var(--primary-color) !important;
     border-color: var(--primary-color) !important;
     box-shadow: none !important;
+}
+
+.forgot-button,
+.register-button {
+    margin-top: 10px;
+}
+
+.login-container {
+    background-color: var(--forms-shadow);
+    margin-top: 5vh;
+    padding-bottom: 5vh;
+    border-radius: 25px;
+}
+
+.login-container h1,
+.login-container label {
+    color: var(--primary-text)
 }
