@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #cd994f;
+    --primary-color: #feb012;
     --nav-background: rgba(0, 40, 64, 0.15);
     --primary-text: white;
     --forms-shadow: rgba(0, 40, 64, 0.5);
@@ -63,11 +63,11 @@ nav {
 }
 
 .second-nav ul li a {
-    color: var(--primary-text) !important;
+    color: var(--buttons-text) !important;
 }
 
 .second-nav ul li a:hover {
-    color: var(--buttons-text) !important;
+    color: var(--primary-text) !important;
 }
 
 .nav-mobile-canava {
