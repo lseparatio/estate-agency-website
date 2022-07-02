@@ -53,8 +53,11 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'captcha',
     'home',
     'accounts',
+    'store',
+    'contact'
     # ... include the providers social you want to enable:
 ]
 
