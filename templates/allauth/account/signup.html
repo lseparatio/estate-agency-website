@@ -5,17 +5,65 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
-<h1>{% trans "Sign Up" %}</h1>
-
-<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
-
-<form class="signup signup_disable" id="signup_form" method="post" action="{% url 'account_signup' %}">
-    {% csrf_token %}
-    {{ form.as_p }}
-    {% if redirect_field_value %}
-    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-    {% endif %}
-    <button type="submit">{% trans "Sign Up" %} &raquo;</button>
-</form>
+<div class="container-md login-container col-md-6 col-sm-12">
+    <div class="row">
+        <div class="col">
+            <h1 class="center">{% trans "Sign Up" %}</h1>
+            <div class="container-md">
+                <form class="signup" id="signup_form2" method="post" action="{% url 'account_signup' %}">
+                    {% csrf_token %}
+                    {% if redirect_field_value %}
+                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                    {% endif %}
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="id_username2">Username:</label>
+                            <input type="text" class="form-control" id="id_username2" minlength="4" maxlength="150"
+                                name="username" placeholder="Username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="id_email3">Email:</label>
+                            <input type="email" class="form-control" id="id_email3" name="email" placeholder="Email"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="id_email4">Confirm Email:</label>
+                            <input type="email" class="form-control" id="id_email4" name="email2" placeholder="Email"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="id_first_name2">First Name:</label>
+                            <input type="text" class="form-control" id="id_first_name2" name="first_name"
+                                placeholder="First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="id_last_name2">Last Name:</label>
+                            <input type="text" class="form-control" id="id_last_name2" name="last_name" maxlength="30"
+                                placeholder="Last Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="id_password_register">Password</label>
+                            <input type="password" class="form-control" name="password1" id="id_password_register"
+                                placeholder="Password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="id_password_register">Confirm Password</label>
+                            <input type="password" class="form-control" id="id_password_register1" name="password2"
+                                placeholder="Confirm Password" required>
+                        </div>
+                    </div>
+                    <div class="form-row pt-2">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary col-12 register-button pt-2">Register</button>
+                        </div>
+                    </div>
+                </form>
+                <a class="btn btn-primary col-12 register-button pt-2" href="{{ login_url }}">Already have an account?
+                    Sign
+                    In!</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
