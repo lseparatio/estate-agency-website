@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+{% endblock %}
+
 {% block page_header %}
 <div class="">
     <div class="row">
@@ -19,5 +23,9 @@
         data-bs-target="#bookValuation" aria-controls="bookValuation"
         aria-label="Book a free Valuation" id="book-valuation">Book a free Valuation</button>
       </div>
+</div>
+
+<div>
+    {% include 'includes/base-search-form.html' %}
 </div>
 {% endblock%}

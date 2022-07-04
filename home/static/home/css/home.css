@@ -1,0 +1,39 @@
+:root {
+    --primary-color-home: #feb012;
+    --nav-background-home: rgba(0, 40, 64, 0.15);
+    --primary-text-home: white;
+    --forms-shadow-home: rgba(0, 40, 64, 0.5);
+    --buttons-text-home: #120909;
+    --total-transparent-home : rgba(0, 0, 0, 0);
+}
+
+.search-base {
+    margin-top: 30vh;
+    background-color: var(--forms-shadow-home);
+    border-radius: 25px;
+}
+
+.search-base p {
+color: var(--primary-text-home);
+}
+
+#pills-lettings-tab,
+#pills-sales-tab,
+#pills-holiday-lets-tab {
+    background-color: var(--total-transparent-home);
+    color: var(--primary-text-home);
+}
+
+#pills-lettings-tab:hover,
+#pills-sales-tab:hover,
+#pills-holiday-lets-tab:hover {
+    border-bottom: 1px solid var(--primary-text-home);
+    border-radius: 0px;
+}
+
+#pills-lettings-tab.active,
+#pills-sales-tab.active,
+#pills-holiday-lets-tab.active {
+    border-bottom: 1px solid var(--primary-text-home);
+    border-radius: 0px;
+}
