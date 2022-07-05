@@ -38,3 +38,17 @@ color: var(--primary-text-home);
     border-bottom: 1px solid var(--primary-color-home);
     border-radius: 0px;
 }
+
+.submit {
+    background-color: var(--primary-color-home);
+    color: var(--buttons-text-home);
+    border: none;
+    box-shadow: none !important;
+}
+
+.submit:hover {
+    background-color: var(--primary-color-home);
+    color: var(--primary-text-home);
+    box-shadow: none !important;
+    border: 1px solid var(--primary-text-home);
+}
