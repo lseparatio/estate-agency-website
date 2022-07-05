@@ -2,7 +2,7 @@
     --primary-color-home: #feb012;
     --nav-background-home: rgba(0, 40, 64, 0.15);
     --primary-text-home: white;
-    --forms-shadow-home: rgba(0, 40, 64, 0.5);
+    --forms-shadow-home: rgba(0, 40, 64, 0.7);
     --buttons-text-home: #120909;
     --total-transparent-home : rgba(0, 0, 0, 0);
 }
@@ -11,6 +11,7 @@
     margin-top: 30vh;
     background-color: var(--forms-shadow-home);
     border-radius: 25px;
+    border: 1px solid var(--primary-color-home);
 }
 
 .search-base p {
@@ -34,6 +35,6 @@ color: var(--primary-text-home);
 #pills-lettings-tab.active,
 #pills-sales-tab.active,
 #pills-holiday-lets-tab.active {
-    border-bottom: 1px solid var(--primary-text-home);
+    border-bottom: 1px solid var(--primary-color-home);
     border-radius: 0px;
 }
