@@ -1,0 +1,54 @@
+<form class="row row-cols-lg-auto g-3 align-items-center  pt-3 pb-3 justify-content-center"
+    id="holliday-lets-search-form">
+
+    <div class="col-12">
+        <label class="visually-hidden" for="inlineFormInputGroupPostcode">Town or Postcode</label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="inlineFormInputGroupPostcode" placeholder="Town or Postcode">
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-2">
+        <label class="visually-hidden" for="inlineFormInputGroupCheckIn">Check-in</label>
+        <div class="input-group">
+            <input type="text" onfocus="(this.type = 'date')" class="form-control" id="inlineFormInputGroupCheckIn"
+                placeholder="Check-in">
+        </div>
+    </div>
+
+    <div class="col-12">
+        <label class="visually-hidden" for="inlineFormInputGroupCheckOut">Check-out</label>
+        <div class="input-group">
+            <input type="text" onfocus="(this.type = 'date')" class="form-control" id="inlineFormInputGroupCheckOut"
+                placeholder="Check-out">
+        </div>
+    </div>
+
+    <div class="col-12">
+        <label class="visually-hidden" for="inlineFormHolidayAdults">Adults</label>
+        <select class="form-select" id="inlineFormHolidayAdults">
+            <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
+            {% include 'includes/holiday-lets-adults-options.html' %}
+        </select>
+    </div>
+
+    <div class="col-12">
+        <label class="visually-hidden" for="inlineFormHolidayChildren">Children</label>
+        <select class="form-select" id="inlineFormSalesChildren">
+            <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
+            {% include 'includes/holiday-lets-children-options.html' %}
+        </select>
+    </div>
+
+    <div class="col-12">
+        <label class="visually-hidden" for="inlineFormHolidayRooms">Rooms</label>
+        <select class="form-select" id="inlineFormHolidayRooms">
+            <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
+            {% include 'includes/holiday-lets-rooms-options.html' %}
+        </select>
+    </div>
+
+    <div class="col-12">
+        <a type="submit" class="btn  btn-primary submit col-12">SEARCH</a>
+    </div>
+</form>

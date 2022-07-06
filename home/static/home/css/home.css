@@ -4,7 +4,7 @@
     --primary-text-home: white;
     --forms-shadow-home: rgba(0, 40, 64, 0.7);
     --buttons-text-home: #120909;
-    --total-transparent-home : rgba(0, 0, 0, 0);
+    --total-transparent-home: rgba(0, 0, 0, 0);
 }
 
 .search-base {
@@ -15,7 +15,7 @@
 }
 
 .search-base p {
-color: var(--primary-text-home);
+    color: var(--primary-text-home);
 }
 
 #pills-lettings-tab,
@@ -54,7 +54,9 @@ color: var(--primary-text-home);
 }
 
 #sales-search-form input:focus,
-#sales-search-form .form-select:focus {
+#sales-search-form .form-select:focus,
+#holliday-lets-search-form input:focus,
+#holliday-lets-search-form .form-select:focus {
     border: 2px solid var(--primary-color) !important;
     border-color: var(--primary-color) !important;
     box-shadow: none !important;
