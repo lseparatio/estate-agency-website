@@ -52,3 +52,10 @@ color: var(--primary-text-home);
     box-shadow: none !important;
     border: 1px solid var(--primary-text-home);
 }
+
+#sales-search-form input:focus,
+#sales-search-form .form-select:focus {
+    border: 2px solid var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: none !important;
+}
