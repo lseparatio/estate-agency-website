@@ -16,3 +16,6 @@ toastr.options = {
     "hideMethod": "fadeOut"
 }
 
+$('#inlineFormInputGroupCheckOut').datepicker({
+    format: 'mm/dd/yyyy'
+});
