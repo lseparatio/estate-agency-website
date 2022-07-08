@@ -5,6 +5,7 @@
     --forms-shadow-home: rgba(0, 40, 64, 0.7);
     --buttons-text-home: #120909;
     --total-transparent-home: rgba(0, 0, 0, 0);
+    --box-shadows: 0 0 0 0.2rem rgba(254, 176, 18, 0.25);
 }
 
 .search-base {
@@ -43,13 +44,13 @@
     background-color: var(--primary-color-home);
     color: var(--buttons-text-home);
     border: none;
-    box-shadow: none !important;
+   
 }
 
 .submit:hover {
     background-color: var(--primary-color-home);
     color: var(--primary-text-home);
-    box-shadow: none !important;
+    box-shadow: var(--box-shadows);
     border: 1px solid var(--primary-text-home);
 }
 
@@ -59,5 +60,16 @@
 #holliday-lets-search-form .form-select:focus {
     border: 2px solid var(--primary-color) !important;
     border-color: var(--primary-color) !important;
-    box-shadow: none !important;
+    box-shadow: var(--box-shadows)
+}
+
+.white {
+    color: var(--primary-text-home);
+}
+
+#residential-radio:checked,
+#commercial-radio:checked {
+    background-color: var(--primary-color-home);
+    border-color: var(--primary-color-home);
+    box-shadow: var(--box-shadows);
 }
