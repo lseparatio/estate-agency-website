@@ -1,48 +1,33 @@
-<form class="row row-cols-lg-auto g-3 align-items-center  pt-3 pb-3 justify-content-center"
-    id="holliday-lets-search-form">
+<form class="row row-cols-lg-auto g-3 align-items-center  pt-3 pb-3 justify-content-center" id="sales-search-form">
 
     <div class="col-12">
-        <label class="visually-hidden" for="inlineFormHolidayLetsPostcode">Town or Postcode</label>
+        <label class="visually-hidden" for="inlineFormInputGroupPostcode">Town or Postcode</label>
         <div class="input-group">
-            <input type="text" class="form-control" id="inlineFormHolidayLetsPostcode" placeholder="Town or Postcode">
-        </div>
-    </div>
-
-    <div class="col-12 col-lg-2">
-        <label class="visually-hidden" for="inlineFormInputGroupCheckIn">Check-in</label>
-        <div class="input-group">
-            <input type="text" class="form-control" id="inlineFormInputGroupCheckIn" placeholder="Check-in" readonly>
+            <input type="text" class="form-control" id="inlineFormInputGroupPostcode" placeholder="Town or Postcode">
         </div>
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="inlineFormInputGroupCheckOut">Check-out</label>
-        <div class="input-group">
-            <input type="text" class="form-control" id="inlineFormInputGroupCheckOut" placeholder="Check-out" readonly>
-        </div>
-    </div>
-
-    <div class="col-12">
-        <label class="visually-hidden" for="inlineFormHolidayAdults">Adults</label>
-        <select class="form-select" id="inlineFormHolidayAdults">
+        <label class="visually-hidden" for="inlineFormSalesType">Property Type</label>
+        <select class="form-select" id="inlineFormSalesType">
             <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
-            {% include 'includes/holiday-lets-adults-options.html' %}
+            {% include 'includes/commercial-type-options.html' %}
         </select>
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="inlineFormHolidayChildren">Children</label>
-        <select class="form-select" id="inlineFormSalesChildren">
+        <label class="visually-hidden" for="inlineFormSalesMin">£ Min</label>
+        <select class="form-select" id="inlineFormSalesMin">
             <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
-            {% include 'includes/holiday-lets-children-options.html' %}
+            {% include 'includes/min-price-options.html' %}
         </select>
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="inlineFormHolidayRooms">Rooms</label>
-        <select class="form-select" id="inlineFormHolidayRooms">
+        <label class="visually-hidden" for="inlineFormSalesMax">£ Max</label>
+        <select class="form-select" id="inlineFormSalesMax">
             <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
-            {% include 'includes/holiday-lets-rooms-options.html' %}
+            {% include 'includes/max-price-options.html' %}
         </select>
     </div>
 
