@@ -9,8 +9,12 @@
             value="residential">
         <label class="form-check-label white" for="residential-radio">Residential</label>
     </div>
+</div>
 
-    <div id="radio-forms">
-        <h1>Comercial form</h1>
-    </div>
+<div id="radio-form-commercial" class="">
+    {% include 'includes/commercial-lets-form.html' %}
+</div>
+
+<div id="radio-form-residential" class="display-none">
+    {% include 'includes/residential-lets-form.html' %}
 </div>
