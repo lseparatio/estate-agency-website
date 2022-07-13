@@ -45,8 +45,9 @@ INSTALLED_APPS = [
     'home',
     'accounts',
     'store',
-    'contact'
-    # ... include the providers social you want to enable:
+    'contact',
+    # Keep This app at the  bottom of INSTALLED_APPS
+    'django_cleanup.apps.CleanupConfig',
 ]
 
 RECAPTCHA_PUBLIC_KEY = os.environ.get('RECAPTCHA_PUBLIC_KEY')

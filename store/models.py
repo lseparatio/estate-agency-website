@@ -1,6 +1,3 @@
-from ast import mod
-from tabnanny import verbose
-from unicodedata import category
 from django.db import models
 
 class Category(models.Model):
