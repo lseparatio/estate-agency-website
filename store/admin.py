@@ -16,7 +16,13 @@ class SubcategoryAdmin(admin.ModelAdmin):
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'subcategory',
-        'name'
+        'name',
+        'description',
+        'price',
+        'image_url',
+        'image',
+        'town',
+        'post_code'
     )
 
 
