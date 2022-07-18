@@ -33,7 +33,14 @@ class ProductAdmin(admin.ModelAdmin):
         'image_url',
         'image',
         'town',
-        'post_code'
+        'post_code',
+        'property_type',
+        'beds',
+        'adults',
+        'children',
+        'rooms',
+        'available',
+        'available_from'
     )
 
 

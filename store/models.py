@@ -1,3 +1,5 @@
+from tabnanny import verbose
+from zoneinfo import available_timezones
 from django.db import models
 
 
@@ -39,6 +41,10 @@ class Property_Type(models.Model):
     subcategory = models.ForeignKey(
         'Subcategory', null=True, blank=True, on_delete=models.SET_NULL)
 
+    class Meta:
+        verbose_name = 'Property Type'
+        verbose_name_plural = 'Property Types'
+
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254)
 
@@ -65,6 +71,12 @@ class Product(models.Model):
         max_length=254, default='Please specify post code')
     property_type = models.ForeignKey(
         'Property_Type', null=True, blank=True, on_delete=models.SET_NULL)
+    beds = models.CharField(max_length=254, null=True, blank=True)
+    adults = models.CharField(max_length=254, null=True, blank=True)
+    children = models.CharField(max_length=254, null=True, blank=True)
+    rooms = models.CharField(max_length=254, null=True, blank=True)
+    available = models.BooleanField(default=True)
+    available_from = models.DateField(blank=True, null=True)
 
     def __str__(self):
         return self.name
