@@ -1,47 +1,47 @@
-<form class="row row-cols-lg-auto g-3 align-items-center  pt-3 pb-3 justify-content-center" id="sales-search-form">
+<form class="row row-cols-lg-auto g-3 align-items-center  pt-3 pb-3 justify-content-center" id="residential-lets-form">
 
     <div class="col-12">
-        <label class="visually-hidden" for="inlineFormInputGroupPostcode">Town or Postcode</label>
+        <label class="visually-hidden" for="residentialLetsPostcode">Town or Postcode</label>
         <div class="input-group">
             <input type="text" class="form-control" id="inlineFormInputGroupPostcode" placeholder="Town or Postcode">
         </div>
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="inlineFormSalesType">Property Type</label>
-        <select class="form-select" id="inlineFormSalesType">
+        <label class="visually-hidden" for="residentialLetsType">Property Type</label>
+        <select class="form-select" id="residentialLetsType">
             <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
             {% include 'includes/property-type-options.html' %}
         </select>
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="inlineFormSalesMin">£ Min</label>
-        <select class="form-select" id="inlineFormSalesMin">
+        <label class="visually-hidden" for="residentialLetsMin">£ Min</label>
+        <select class="form-select" id="residentialLetsMin">
             <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
             {% include 'includes/min-price-options.html' %}
         </select>
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="inlineFormSalesMax">£ Max</label>
-        <select class="form-select" id="inlineFormSalesMax">
+        <label class="visually-hidden" for="residentialLetsMax">£ Max</label>
+        <select class="form-select" id="residentialLetsMax">
             <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
             {% include 'includes/max-price-options.html' %}
         </select>
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="inlineFormSalesMinBeds">Min Beds</label>
-        <select class="form-select" id="inlineFormSalesMinBeds">
+        <label class="visually-hidden" for="residentialLetsMinBeds">Min Beds</label>
+        <select class="form-select" id="residentialLetsMinBeds">
             <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
             {% include 'includes/min-beds-options.html' %}
         </select>
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="inlineFormSalesMaxBeds">Max Beds</label>
-        <select class="form-select" id="inlineFormSalesMaxBeds">
+        <label class="visually-hidden" for="residentialLetsMaxBeds">Max Beds</label>
+        <select class="form-select" id="residentialLetsMaxBeds">
             <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
             {% include 'includes/max-beds-options.html' %}
         </select>

@@ -1,31 +1,32 @@
-<form class="row row-cols-lg-auto g-3 align-items-center  pt-3 pb-3 justify-content-center" id="sales-search-form">
+<form class="row row-cols-lg-auto g-3 align-items-center  pt-3 pb-3 justify-content-center"
+    id="commercia-llets-search-form">
 
     <div class="col-12">
-        <label class="visually-hidden" for="inlineFormInputGroupPostcode">Town or Postcode</label>
+        <label class="visually-hidden" for="commerciaLletsPostcode">Town or Postcode</label>
         <div class="input-group">
-            <input type="text" class="form-control" id="inlineFormInputGroupPostcode" placeholder="Town or Postcode">
+            <input type="text" class="form-control" id="commerciaLletsPostcode" placeholder="Town or Postcode">
         </div>
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="inlineFormSalesType">Property Type</label>
-        <select class="form-select" id="inlineFormSalesType">
+        <label class="visually-hidden" for="commerciaLletsType">Property Type</label>
+        <select class="form-select" id="commerciaLletsType">
             <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
             {% include 'includes/commercial-type-options.html' %}
         </select>
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="inlineFormSalesMin">£ Min</label>
-        <select class="form-select" id="inlineFormSalesMin">
+        <label class="visually-hidden" for="commerciaLletsMin">£ Min</label>
+        <select class="form-select" id="commerciaLletsMin">
             <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
             {% include 'includes/min-price-options.html' %}
         </select>
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="inlineFormSalesMax">£ Max</label>
-        <select class="form-select" id="inlineFormSalesMax">
+        <label class="visually-hidden" for="commerciaLletsMax">£ Max</label>
+        <select class="form-select" id="commerciaLletsMax">
             <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
             {% include 'includes/max-price-options.html' %}
         </select>

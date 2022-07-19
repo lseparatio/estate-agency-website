@@ -9,7 +9,7 @@
 }
 
 .search-base {
-    margin-top: 30vh;
+    margin-top: 20vh;
     background-color: var(--forms-shadow-home);
     border-radius: 25px;
     border: 1px solid var(--primary-color-home);
@@ -77,3 +77,7 @@
 .display-none {
     display: none;
 }
+
+.welcome {
+    padding-top: 20vh;
+} 
