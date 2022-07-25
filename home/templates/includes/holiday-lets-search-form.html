@@ -1,10 +1,10 @@
 <form class="row row-cols-lg-auto g-3 align-items-center  pt-3 pb-3 justify-content-center"
-    id="holliday-lets-search-form">
+    id="holliday-lets-search-form" method="GET" action="{% url 'products' %}">
 
     <div class="col-12">
         <label class="visually-hidden" for="inlineFormHolidayLetsPostcode">Town or Postcode</label>
         <div class="input-group">
-            <input type="text" class="form-control" id="inlineFormHolidayLetsPostcode" placeholder="Town or Postcode">
+            <input type="text" class="form-control" id="inlineFormHolidayLetsPostcode" name="" placeholder="Town or Postcode">
         </div>
     </div>
 

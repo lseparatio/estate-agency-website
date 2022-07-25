@@ -1,3 +1,4 @@
+from email.headerregistry import Address
 from tabnanny import verbose
 from zoneinfo import available_timezones
 from django.db import models
@@ -63,19 +64,34 @@ class Product(models.Model):
         'Subcategory', null=True, blank=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=254, default='Name is empty')
     description = models.TextField(default='Please provide description')
-    price = models.DecimalField(max_digits=10, decimal_places=2, default="0")
+    price = models.PositiveIntegerField(default="0")
     image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
+    primary_image = models.ImageField(null=True, blank=True)
+    detail_image1 = models.ImageField(null=True, blank=True)
+    detail_image2 = models.ImageField(null=True, blank=True)
+    detail_image3 = models.ImageField(null=True, blank=True)
+    detail_image4 = models.ImageField(null=True, blank=True)
+    detail_image5 = models.ImageField(null=True, blank=True)
+    detail_image6 = models.ImageField(null=True, blank=True)
+    detail_image7 = models.ImageField(null=True, blank=True)
+    detail_image8 = models.ImageField(null=True, blank=True)
+    detail_image9 = models.ImageField(null=True, blank=True)
+    detail_image10 = models.ImageField(null=True, blank=True)
     town = models.CharField(max_length=254, default='Please specify town')
+    address = models.CharField(max_length=254, default='Please provide the address')
     post_code = models.CharField(
         max_length=254, default='Please specify post code')
     property_type = models.ForeignKey(
         'Property_Type', null=True, blank=True, on_delete=models.SET_NULL)
-    beds = models.CharField(max_length=254, null=True, blank=True)
-    adults = models.CharField(max_length=254, null=True, blank=True)
-    children = models.CharField(max_length=254, null=True, blank=True)
-    rooms = models.CharField(max_length=254, null=True, blank=True)
+    bedroom = models.PositiveSmallIntegerField(default=0)
+    bathroom = models.PositiveSmallIntegerField(default=0)
+    reception = models.PositiveSmallIntegerField(default=0)
+    adults = models.PositiveSmallIntegerField(default=0)
+    children = models.PositiveSmallIntegerField(default=0)
+    rooms = models.PositiveSmallIntegerField(default=0)
     available = models.BooleanField(default=True)
+    rented = models.BooleanField(default=False)
+    sold = models.BooleanField(default=False)
     available_from = models.DateField(blank=True, null=True)
 
     def __str__(self):
