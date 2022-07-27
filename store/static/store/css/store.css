@@ -29,3 +29,8 @@
     box-shadow: var(--box-shadows) !important;
     color: var(--primary-text);
 }
+
+.individual-product {
+    background-color: blue;
+    color: var(--primary-text);
+}

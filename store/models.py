@@ -65,6 +65,7 @@ class Product(models.Model):
     name = models.CharField(max_length=254, default='Name is empty')
     description = models.TextField(default='Please provide description')
     price = models.PositiveIntegerField(default="0")
+    period = models.CharField(max_length=254, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     primary_image = models.ImageField(null=True, blank=True)
     detail_image1 = models.ImageField(null=True, blank=True)

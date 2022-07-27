@@ -30,6 +30,7 @@ class ProductAdmin(admin.ModelAdmin):
         'name',
         'description',
         'price',
+        'period',
         'image_url',
         'primary_image',
         'detail_image1',
