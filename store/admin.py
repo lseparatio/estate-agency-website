@@ -43,6 +43,8 @@ class ProductAdmin(admin.ModelAdmin):
         'detail_image8',
         'detail_image9',
         'detail_image10',
+        'detail_image11',
+        'detail_image12',
         'town',
         'address',
         'post_code',

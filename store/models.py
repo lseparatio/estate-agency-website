@@ -78,6 +78,8 @@ class Product(models.Model):
     detail_image8 = models.ImageField(null=True, blank=True)
     detail_image9 = models.ImageField(null=True, blank=True)
     detail_image10 = models.ImageField(null=True, blank=True)
+    detail_image11 = models.ImageField(null=True, blank=True)
+    detail_image12 = models.ImageField(null=True, blank=True)
     town = models.CharField(max_length=254, default='Please specify town')
     address = models.CharField(max_length=254, default='Please provide the address')
     post_code = models.CharField(
