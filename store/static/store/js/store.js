@@ -214,3 +214,7 @@ $(document).ready(function () {
         detail_image12(this);
     });
 });
+
+$('#id_available_from').datepicker({
+    format: 'dd/mm/yyyy'
+});

@@ -76,3 +76,17 @@ img {
 img[src] {
     display: block;
 }
+
+.add-product-buttons {
+    background-color: var(--primary-color);
+    color: var(--buttons-text);
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.add-product-buttons:hover {
+    background-color: var(--primary-color);
+    color: var(--primary-text);
+    box-shadow: none !important;
+    border: 1px solid var(--primary-text);
+}

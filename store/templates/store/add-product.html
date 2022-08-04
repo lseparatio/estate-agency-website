@@ -145,8 +145,18 @@
                             <input type="file" class="form-control" name="primary_image" accept="image/*"
                                 id="id_primary_image">
                         </div>
-                        <div class="col-12 col-md-8 pt-2">
+                        <div class="col-12 col-md-4 pt-2">
                             <img class="primary_image" id='primary_image_preview' />
+                        </div>
+                        <div class="col-12 col-md-4 pt-2">
+                            <label class="text-left" for="id_available">Is Available</label>
+                            <input type="checkbox" class="form-check-input" name="available" id="id_available" checked>
+                            <label class="text-left" for="id_rented">Is Rented</label>
+                            <input type="checkbox" class="form-check-input" name="rented" id="id_rented">
+                            <label class="text-left" for="id_sold">Is Sold</label>
+                            <input type="checkbox" class="form-check-input" name="sold" id="id_sold">
+                            <label class="text-left" for="available_from">Is available from</label>
+                            <input type="text" class="form-control" name="available_from" id="id_available_from">
                         </div>
                     </div>
                     <div class="row pt-4">
@@ -270,12 +280,11 @@
                         </div>
                     </div>
 
-
-
-
-                    <div class="text-right">
-                        <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
-                        <button class="btn btn-black rounded-0" type="submit">Add Product</button>
+                    <div class="center pt-4">
+                        <a class="btn btn-primary col-12 col-md-5 pt-2 add-product-buttons mb-4"
+                            href="{% url 'products' %}">Cancel</a>
+                        <button type="submit" class="btn btn-primary col-12 col-md-5 pt-2 add-product-buttons mb-4">Add
+                            Product</button>
                     </div>
                 </form>
             </div>
