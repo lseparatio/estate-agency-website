@@ -46,3 +46,33 @@
 .overlay {
     background-color: var(--box-shadows) !important;
 }
+
+.first_name_options {
+    color: var(--primary-text);
+}
+
+.add-product {
+    background-color: var(--forms-shadow) !important;
+    color: var(--primary-text);
+    border: 1px solid var(--primary-color);
+    padding-top: 2vh;
+    border-radius: 25px;
+}
+
+.text-left {
+    text-align: start !important;
+}
+
+.primary_image {
+    height: 100%;
+    width: 100%;
+    border: 0 !important;
+}
+
+img {
+    display: none;
+}
+
+img[src] {
+    display: block;
+}
