@@ -125,6 +125,16 @@
                                         class="btn btn-primary col-12  pt-2 mt-2 card-footer-button">Contact</button>
                                 </div>
                             </div>
+                            {% if request.user.is_superuser %}
+                            <div class="row">
+                                <div class="col">
+                                    <a class="btn btn-primary col-12  pt-2 mt-2 card-footer-edit" href="{% url 'edit_product' product.id %}">Edit</a>
+                                </div>
+                                <div class="col">
+                                    <a class="btn btn-primary col-12  pt-2 mt-2 card-footer-delete" href="{% url 'delete_product' product.id %}">Delete</a>
+                                </div>
+                            </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>

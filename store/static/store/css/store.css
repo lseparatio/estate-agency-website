@@ -30,6 +30,38 @@
     color: var(--primary-text);
 }
 
+.card-footer-edit,
+.card-footer-edit:active,
+.card-footer-edit:focus:hover {
+    background-color: green;
+    border-color: var(--buttons-text);
+    color: var(--primary-text);
+    box-shadow: var(--box-shadows) !important;
+}
+
+.card-footer-edit:focus,
+.card-footer-edit:hover {
+    background-color: var(--primary-color) !important;
+    box-shadow: var(--box-shadows) !important;
+    color: var(--primary-text);
+}
+
+.card-footer-delete,
+.card-footer-delete:active,
+.card-footer-delete:focus:hover {
+    background-color: red;
+    border-color: var(--buttons-text);
+    color: var(--primary-text);
+    box-shadow: var(--box-shadows) !important;
+}
+
+.card-footer-delete:focus,
+.card-footer-delete:hover {
+    background-color: var(--primary-color) !important;
+    box-shadow: var(--box-shadows) !important;
+    color: var(--primary-text);
+}
+
 .individual-product {
     background-color: var(--forms-shadow) !important;
     color: var(--primary-text);
