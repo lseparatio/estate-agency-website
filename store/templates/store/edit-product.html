@@ -48,21 +48,66 @@
                             <label class="text-left" for="id_category">Please select a category *</label>
                             <select class="form-select" value="{{form.category.value}}"
                                 aria-label="Please select a category" name="category" id="id_category">
+                                {% if form.category.value == 1 %}
+                                <option value="1" selected>Sales</option>
+                                <option value="2">Lettings</option>
+                                <option value="3">HOLIDAY LETS</option>
+                                {% elif form.category.value == 2 %}
+                                <option value="1">Sales</option>
+                                <option value="2" selected>Lettings</option>
+                                <option value="3">HOLIDAY LETS</option>
+                                {% elif form.category.value == 3 %}
+                                <option value="1">Sales</option>
+                                <option value="2">Lettings</option>
+                                <option value="3" selected>HOLIDAY LETS</option>
+                                {% else %}
                                 <option value="1">Sales</option>
                                 <option value="2">Lettings</option>
                                 <option value="3">HOLIDAY LETS</option>
+                                {% endif %}
                             </select>
                         </div>
                         <div class="col-12 col-md-4 pt-2">
                             <label class="text-left" for="id_subcategory">Please select a subcategory *</label>
                             <select class="form-select" value="{{form.subcategory.value}}"
                                 aria-label="Please select a subcategory" name="subcategory" id="id_subcategory">
-                                <option value="{{form.subcategory.value}}">{{form.subcategory.name}}</option>
+                                {% if form.subcategory.value == 1 %}
+                                <option value="1" selected>Commercial Sales</option>
+                                <option value="2">Residential Sales</option>
+                                <option value="3">Commercial Lettings</option>
+                                <option value="4">Residential Lettings</option>
+                                <option value="37">Holiday Lets</option>
+                                {% elif form.subcategory.value == 2 %}
+                                <option value="1">Commercial Sales</option>
+                                <option value="2" selected>Residential Sales</option>
+                                <option value="3">Commercial Lettings</option>
+                                <option value="4">Residential Lettings</option>
+                                <option value="37">Holiday Lets</option>
+                                {% elif form.subcategory.value == 3 %}
+                                <option value="1">Commercial Sales</option>
+                                <option value="2">Residential Sales</option>
+                                <option value="3" selected>Commercial Lettings</option>
+                                <option value="4">Residential Lettings</option>
+                                <option value="37">Holiday Lets</option>
+                                {% elif form.subcategory.value == 4 %}
+                                <option value="1">Commercial Sales</option>
+                                <option value="2">Residential Sales</option>
+                                <option value="3">Commercial Lettings</option>
+                                <option value="4" selected>Residential Lettings</option>
+                                <option value="37">Holiday Lets</option>
+                                {% elif form.subcategory.value == 37 %}
+                                <option value="1">Commercial Sales</option>
+                                <option value="2">Residential Sales</option>
+                                <option value="3">Commercial Lettings</option>
+                                <option value="4">Residential Lettings</option>
+                                <option value="37" selected>Holiday Lets</option>
+                                {% else %}
                                 <option value="1">Commercial Sales</option>
                                 <option value="2">Residential Sales</option>
                                 <option value="3">Commercial Lettings</option>
                                 <option value="4">Residential Lettings</option>
                                 <option value="37">Holiday Lets</option>
+                                {% endif %}
                             </select>
                         </div>
                     </div>
@@ -102,8 +147,9 @@
                         </div>
                         <div class="col-12 col-md-4 pt-2">
                             <label class="text-left" for="id_period">Period For Price Day, Month etc.</label>
-                            <input type="text" class="form-control" value="{{ form.period.value }}" name="period"
-                                maxlength="254" id="id_period">
+                            <input type="text" class="form-control" {% if form.period.value %}
+                                value="{{ form.period.value }}" {% endif %} name="period" maxlength="254"
+                                id="id_period">
                         </div>
                         <div class="col-12 col-md-4 pt-2">
                             <label class="text-left" for="id_property_type">Property Type</label>
@@ -156,13 +202,30 @@
                         </div>
                         <div class="col-12 col-md-4 pt-2">
                             <label class="text-left" for="id_available">Is Available</label>
-                            <input type="checkbox" class="form-check-input" name="available" id="id_available" checked>
+                            {% if form.available.value == True %}
+                            <input type="checkbox" class="form-check-input" value="true" name="available" id="id_available" checked>
+                            {% else %}
+                            <input type="checkbox" class="form-check-input" value="true" name="available" id="id_available">
+                            {% endif %}
                             <label class="text-left" for="id_rented">Is Rented</label>
-                            <input type="checkbox" class="form-check-input" name="rented" id="id_rented">
+                            {% if form.rented.value == True %}
+                            <input type="checkbox" class="form-check-input" value="true" name="rented" id="id_rented" checked>
+                            {% else %}
+                            <input type="checkbox" class="form-check-input" value="true" name="rented" id="id_rented">
+                            {% endif %}
                             <label class="text-left" for="id_sold">Is Sold</label>
-                            <input type="checkbox" class="form-check-input" name="sold" id="id_sold">
+                            {% if form.sold.value == True %}
+                            <input type="checkbox" class="form-check-input" value="true" name="sold" id="id_sold" checked>
+                            {% else %}
+                            <input type="checkbox" class="form-check-input" value="true" name="sold" id="id_sold">
+                            {% endif %}
+
                             <label class="text-left" for="available_from">Is available from</label>
+                            {% if available_from %}
+                            <input type="text" class="form-control" value="{{ form.available_from.value }}" name="available_from" id="id_available_from">
+                            {% else %}
                             <input type="text" class="form-control" name="available_from" id="id_available_from">
+                            {% endif %}
                         </div>
                     </div>
                     <div class="row pt-4">
