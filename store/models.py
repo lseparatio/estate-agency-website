@@ -95,7 +95,7 @@ class Product(models.Model):
     available = models.BooleanField(default=True, null=True, blank=True)
     rented = models.BooleanField(default=False, null=True, blank=True)
     sold = models.BooleanField(default=False, null=True, blank=True)
-    available_from = models.DateField(blank=True, null=True)
+    available_from = models.CharField(max_length=256, blank=True, null=True)
 
     def __str__(self):
         return self.name

@@ -203,28 +203,47 @@
                         <div class="col-12 col-md-4 pt-2">
                             <label class="text-left" for="id_available">Is Available</label>
                             {% if form.available.value == True %}
-                            <input type="checkbox" class="form-check-input" value="true" name="available" id="id_available" checked>
+                            <select name="available" id="id_available" class="form-select">
+                                <option value="true" selected>Yes</option>
+                                <option value="false">No</option>
+                            </select>
                             {% else %}
-                            <input type="checkbox" class="form-check-input" value="true" name="available" id="id_available">
+                            <select name="available" id="id_available" class="form-select">
+                                <option value="true">Yes</option>
+                                <option value="false" selected>No</option>
+                            </select>
                             {% endif %}
                             <label class="text-left" for="id_rented">Is Rented</label>
                             {% if form.rented.value == True %}
-                            <input type="checkbox" class="form-check-input" value="true" name="rented" id="id_rented" checked>
+                            <select name="rented" id="id_rented" class="form-select">
+                                <option value="true" selected>Yes</option>
+                                <option value="false">No</option>
+                            </select>
                             {% else %}
-                            <input type="checkbox" class="form-check-input" value="true" name="rented" id="id_rented">
+                            <select name="rented" id="id_rented" class="form-select">
+                                <option value="true">Yes</option>
+                                <option value="false" selected>No</option>
+                            </select>
                             {% endif %}
                             <label class="text-left" for="id_sold">Is Sold</label>
                             {% if form.sold.value == True %}
-                            <input type="checkbox" class="form-check-input" value="true" name="sold" id="id_sold" checked>
+                            <select name="sold" id="id_sold" class="form-select">
+                                <option value="true" selected>Yes</option>
+                                <option value="false">No</option>
+                            </select>
                             {% else %}
-                            <input type="checkbox" class="form-check-input" value="true" name="sold" id="id_sold">
+                            <select name="sold" id="id_sold" class="form-select">
+                                <option value="true">Yes</option>
+                                <option value="false" selected>No</option>
+                            </select>
                             {% endif %}
 
                             <label class="text-left" for="available_from">Is available from</label>
-                            {% if available_from %}
-                            <input type="text" class="form-control" value="{{ form.available_from.value }}" name="available_from" id="id_available_from">
+                            {% if form.available_from %}
+                            <input type="text" class="form-control date" value="{{ form.available_from.value }}"
+                                name="available_from" id="id_available_from">
                             {% else %}
-                            <input type="text" class="form-control" name="available_from" id="id_available_from">
+                            <input type="text" class="form-control date" name="available_from" id="id_available_from">
                             {% endif %}
                         </div>
                     </div>

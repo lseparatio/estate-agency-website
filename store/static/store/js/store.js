@@ -215,6 +215,6 @@ $(document).ready(function () {
     });
 });
 
-$('#id_available_from').datepicker({
+$('.date').datepicker({
     format: 'dd/mm/yyyy'
 });
