@@ -155,20 +155,7 @@
                             <label class="text-left" for="id_property_type">Property Type</label>
                             <select name="property_type" value="{{ form.property_type.value }}" class="form-select"
                                 id="id_property_type">
-                                <option value="1">Industrial Units</option>
-                                <option value="2">Office Space</option>
-                                <option value="3">Storage Space</option>
-                                <option value="4">Land</option>
-                                <option value="5">Yard Space</option>
-                                <option value="6">Terraced House</option>
-                                <option value="8">Detached House</option>
-                                <option value="7">Semi Detached_house</option>
-                                <option value="9">Town House</option>
-                                <option value="10">Bungalow</option>
-                                <option value="11">Flat</option>
-                                <option value="12">Studio</option>
-                                <option value="13">Apartment</option>
-                                <option value="14">Caravan</option>
+                                {% include 'includes/property-type-edit-product.html' %}
                             </select>
                         </div>
                     </div>
@@ -237,9 +224,8 @@
                                 <option value="false" selected>No</option>
                             </select>
                             {% endif %}
-
                             <label class="text-left" for="available_from">Is available from</label>
-                            {% if form.available_from %}
+                            {% if form.available_from.value %}
                             <input type="text" class="form-control date" value="{{ form.available_from.value }}"
                                 name="available_from" id="id_available_from">
                             {% else %}
