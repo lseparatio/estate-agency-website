@@ -80,4 +80,42 @@
 
 .welcome {
     padding-top: 20vh;
-} 
+}
+
+.presentation {
+    background-color: var(--forms-shadow-home);
+
+}
+
+.keys {
+    max-width: 300px;
+    max-height: 600px;
+}
+
+.get-free-evaluation {
+    background-color: var(--primary-color-home);
+    border-radius: 25px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.welcome-to-let-in {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+
+}
+
+.value-button {
+    background-color: var(--primary-color-home);
+    border: 1px solid var(--primary-text-home);
+}
+
+.value-button:hover {
+    background-color: var(--primary-text-home);
+    border: 1px solid var(--buttons-text-home);
+    color: var(--buttons-text-home);
+}
