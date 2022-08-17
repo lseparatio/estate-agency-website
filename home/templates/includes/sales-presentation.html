@@ -1,0 +1,157 @@
+<div class="container-fluid mt-4">
+    <!--here will go some sorting options-->
+    <div class="row">
+        <div class="product-container col-12">
+            <div class="row mt-1 mb-2">
+                {% for product in sales_products|slice:":8" %}
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card h-100">
+                        {% if product.sold == True %}
+                        <span class=" center available">SOLD</span>
+                        {% elif product.available_from %}
+                        <span class=" center available">Available from: {{product.available_from}}</span>
+                        {% elif product.rented == True %}
+                        <span class=" center available">RENTED</span>
+                        {% elif product.available %}
+                        <span class=" center available">AVAILABLE</span>
+                        {% else %}
+                        {% endif %}
+
+                        {% if product.primary_image %}
+
+                        <a href="{% url 'product_detail' product.id %}">
+                            <img class="card-img-top " src="{{ product.primary_image.url }}" alt="{{ product.name }}">
+
+                        </a>
+
+                        {% else %}
+                        <a href="{% url 'product_detail' product.id %}">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                                alt="{{ product.name }}">
+                        </a>
+                        {% endif %}
+
+                        <div class="card-body pb-0">
+
+                            <div class="row">
+                                <div class="col">
+                                    <p class="center">£ {{ product.price }} {% if product.period %} / {{ product.period }} {% endif %}</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <p class="center">{{ product.name }}</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <p class="center">{{ product.address }}</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <p class="center">{{ product.town }}</p>
+                                </div>
+                                <div class="col">
+                                    <p class="center">{{ product.post_code }}</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                {% if product.bedroom %}
+                                <div class="col">
+                                    <p class="center" data-bs-toggle="tooltip" data-bs-placement="top" title="Bedroom">
+                                        <i class="fa-solid fa-bed"></i> X {{ product.bedroom }}
+                                    </p>
+
+                                </div>
+                                {% endif %}
+                                {% if product.bathroom %}
+                                <div class="col">
+                                    <p class="center" data-bs-toggle="tooltip" data-bs-placement="top" title="Bathroom">
+                                        <i class="fa-solid fa-bath"></i> X {{ product.bathroom }}
+                                    </p>
+                                </div>
+                                {% endif %}
+                                {% if product.reception %}
+                                <div class="col">
+                                    <p class="center" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="Living Room"><i class="fa-solid fa-tv"></i> X {{ product.reception }}</p>
+                                </div>
+                                {% endif %}
+                            </div>
+
+                        </div>
+
+                        <div class="card-footer bg-white pt-0 border-0 text-left">
+                            <div class="row">
+                                {% if product.category.name == "sales" %}
+                                {% if product.available_from or product.available %}
+                                <div class="col">
+                                    <button class="btn btn-primary col-12  pt-2 mt-2 card-footer-button">Buy
+                                        Now</button>
+                                </div>
+                                {% endif %}
+                                {% elif product.category.name == "lettings" %}
+                                {% if product.available_from or product.available %}
+                                <div class="col">
+                                    <button class="btn btn-primary col-12  pt-2 mt-2 card-footer-button">Rent
+                                        Now</button>
+                                </div>
+                                {% endif %}
+                                {% elif product.category.name == "holiday_lets" %}
+                                {% if product.available_from or product.available %}
+
+                                <div class="col">
+                                    <button class="btn btn-primary col-12  pt-2 mt-2 card-footer-button">Book
+                                        Now</button>
+                                </div>
+                                {% endif %}
+                                {% endif %}
+                                <div class="col">
+                                    <button
+                                        class="btn btn-primary col-12  pt-2 mt-2 card-footer-button">Contact</button>
+                                </div>
+                            </div>
+                            {% if request.user.is_superuser %}
+                            <div class="row">
+                                <div class="col">
+                                    <a class="btn btn-primary col-12  pt-2 mt-2 card-footer-edit" href="{% url 'edit_product' product.id %}">Edit</a>
+                                </div>
+                                <div class="col">
+                                    <a class="btn btn-primary col-12  pt-2 mt-2 card-footer-delete" href="{% url 'delete_product' product.id %}">Delete</a>
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% if forloop.counter|divisibleby:1 %}
+
+                <div class="col-12 d-sm-none mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:2 %}
+                <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:3 %}
+                <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:4 %}
+                <div class="col-12 d-none d-xl-block mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

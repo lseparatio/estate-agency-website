@@ -1,31 +1,30 @@
 <div class="container col-md-10 pt-4 products-cards mr-0 ml-0">
     <ul class="nav nav-pills nav-fill" role="tablist">
         <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="pills-sales-tab" data-bs-toggle="pill" data-bs-target="#pills-sales"
-                type="button" role="tab" aria-controls="pills-sales" aria-selected="true">SALES</button>
+            <button class="nav-link active" id="pills-sales-presentation" data-bs-toggle="pill" data-bs-target="#pills-sales-card"
+                type="button" role="tab" aria-controls="pills-sales-card" aria-selected="true">SALES</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-lettings-tab" data-bs-toggle="pill" data-bs-target="#pills-lettings"
-                type="button" role="tab" aria-controls="pills-lettings" aria-selected="false">LETTINGS</button>
+            <button class="nav-link" id="pills-lettings-presentation" data-bs-toggle="pill" data-bs-target="#pills-lettings-card"
+                type="button" role="tab" aria-controls="pills-lettings-card" aria-selected="false">LETTINGS</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-holiday-lets-tab" data-bs-toggle="pill"
-                data-bs-target="#pills-holiday-lets" type="button" role="tab" aria-controls="pills-holiday-lets"
+            <button class="nav-link" id="pills-holiday-lets-presentation" data-bs-toggle="pill"
+                data-bs-target="#pills-holiday-lets-card" type="button" role="tab" aria-controls="pills-holiday-lets-card"
                 aria-selected="false">HOLIDAY LETS</button>
         </li>
     </ul>
     <div class="tab-content center">
-        <div class="tab-pane fade show active" id="pills-sales" role="tabpanel" aria-labelledby="pills-sales-tab">
-            {% include 'includes/sales-search-form.html' %}
+        <div class="tab-pane fade show active col-12" id="pills-sales-card" role="tabpanel" aria-labelledby="pills-sales-presentation">
+            {% include 'includes/sales-presentation.html' %}
 
         </div>
-        <div class="tab-pane fade" id="pills-lettings" role="tabpanel" aria-labelledby="pills-lettings-tab">
-            {% include 'includes/lettings-pills.html' %}
+        <div class="tab-pane fade" id="pills-lettings-card" role="tabpanel" aria-labelledby="pills-lettings-presentation">
+            {% include 'includes/lettings-presentation.html' %}
 
         </div>
-        <div class="tab-pane fade" id="pills-holiday-lets" role="tabpanel" aria-labelledby="pills-holiday-lets-tab">
-            {% include 'includes/holiday-lets-search-form.html' %}
-
+        <div class="tab-pane fade" id="pills-holiday-lets-card" role="tabpanel" aria-labelledby="pills-holiday-lets-presentation">
+            {% include 'includes/holiday-lets-presentation.html' %}
         </div>
     </div>
 </div>
