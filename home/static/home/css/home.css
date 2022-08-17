@@ -96,10 +96,6 @@
 
 }
 
-.keys {
-    max-width: 300px;
-    max-height: 600px;
-}
 
 .get-free-evaluation {
     background-color: var(--primary-color-home);
@@ -258,4 +254,10 @@ img[src] {
     color: var(--primary-text);
     box-shadow: none !important;
     border: 1px solid var(--primary-text);
+}
+
+
+.keys {
+    max-width: 300px;
+    max-height: 600px;
 }

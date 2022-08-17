@@ -31,8 +31,8 @@
 
 <section class="presentation mt-4 mr-0 pr-0 welcome-to-let-in">
     <div class="row mt-4 welcome-to-let-in">
-        <div class="col-12 col-md-5 center pt-4 pb-4 welcome-to-let-in">
-            <img class="keys rounded" src="{% static 'home/img/pexels-oleksandr-pidvalnyi-7599735.jpg' %}"
+        <div class="col-12 col-md-5 center pt-4 pb-4 welcome-to-let-in ">
+            <img class="keys rounded mx-auto d-block" src="{% static 'home/img/pexels-oleksandr-pidvalnyi-7599735.jpg' %}"
                 loading="lazy" alt="Keys">
         </div>
         <div class="col mr-0 ml-0">
@@ -51,7 +51,7 @@
                         those who want to succeed in a fast, successful solid manor.</p>
                 </div>
             </div>
-            <div class="row get-free-evaluation col-12 col-md-8 mt-4 d-flex justify-content-center align-items-center pt-3 pr-0 ml-0 mr-0">
+            <div class="row get-free-evaluation col-12 col-md-8 mt-4 mb-4 d-flex justify-content-center align-items-center pt-3 pr-0 ml-0 mr-0">
                 <div class="col-12 col-md-8 justify-content-center center mr-0 ml-0">
                     <h5 class="white">Get a free valuation on your home now!</h5>
                 </div>
@@ -64,6 +64,9 @@
 </section>
 <section class="mr-0 ml-0 mt-4 product-display">
     {% include 'includes/product-display-selector.html' %}
+    <div class="col-12 padding-top center">
+        <a type="button" class="btn btn-book-evaluation btn-lg" href="{% url 'products' %}"  aria-label="See all properties" id="book-valuation">See all properties</a>
+    </div>
 </section>
 {% endblock %}
 
