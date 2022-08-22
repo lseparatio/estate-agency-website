@@ -122,3 +122,25 @@ img[src] {
     box-shadow: none !important;
     border: 1px solid var(--primary-text);
 }
+
+.background-transparent {
+    background-color: var(--forms-shadow);
+}
+
+/* Stripe CSS */
+
+.hidden {
+    display: none;
+}
+
+#payment-message {
+    color: rgb(105, 115, 134);
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 12px;
+    text-align: center;
+}
+
+#payment-element {
+    margin-bottom: 24px;
+}

@@ -1,5 +1,3 @@
-from unicodedata import category
-from urllib import request
 from django.shortcuts import render
 from store.models import Product, Category, Subcategory
 

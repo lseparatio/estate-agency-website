@@ -100,23 +100,23 @@
                                 {% if product.category.name == "sales" %}
                                 {% if product.available_from or product.available %}
                                 <div class="col">
-                                    <button class="btn btn-primary col-12  pt-2 mt-2 card-footer-button">Buy
-                                        Now</button>
+                                    <a class="btn btn-primary col-12  pt-2 mt-2 card-footer-button" href="{% url 'checkout' product.id %}">Buy
+                                        Now</a>
                                 </div>
                                 {% endif %}
                                 {% elif product.category.name == "lettings" %}
                                 {% if product.available_from or product.available %}
                                 <div class="col">
-                                    <button class="btn btn-primary col-12  pt-2 mt-2 card-footer-button">Rent
-                                        Now</button>
+                                    <a class="btn btn-primary col-12  pt-2 mt-2 card-footer-button" href="{% url 'checkout' product.id %}">Rent
+                                        Now</a>
                                 </div>
                                 {% endif %}
                                 {% elif product.category.name == "holiday_lets" %}
                                 {% if product.available_from or product.available %}
 
                                 <div class="col">
-                                    <button class="btn btn-primary col-12  pt-2 mt-2 card-footer-button">Book
-                                        Now</button>
+                                    <a class="btn btn-primary col-12  pt-2 mt-2 card-footer-button" href="{% url 'product_detail' product.id %}">Book
+                                        Now</a>
                                 </div>
                                 {% endif %}
                                 {% endif %}

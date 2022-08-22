@@ -46,12 +46,19 @@ INSTALLED_APPS = [
     'accounts',
     'store',
     'contact',
+    'django_countries',
     # Keep This app at the  bottom of INSTALLED_APPS
     'django_cleanup.apps.CleanupConfig',
 ]
 
 RECAPTCHA_PUBLIC_KEY = os.environ.get('RECAPTCHA_PUBLIC_KEY')
 RECAPTCHA_PRIVATE_KEY = os.environ.get('RECAPTCHA_PRIVATE_KEY')
+STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY')
+STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
+STRIPE_CURRENCY = os.environ.get('STRIPE_CURRENCY')
+STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET')
+
+
 
 ACCOUNT_FORMS = {
 'signup': 'accounts.forms.CustomSignupForm',
