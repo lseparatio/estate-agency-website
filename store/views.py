@@ -15,7 +15,6 @@ import stripe
 import json
 
 
-
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
@@ -66,6 +65,7 @@ def product_detail(request, product_id):
 
     return render(request, 'store/individual-product.html', context)
 
+
 @login_required
 def add_product(request):
     """ Add a product """
@@ -80,10 +80,11 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to add product. Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'store/add-product.html'
     context = {
         'form': form,
@@ -108,7 +109,8 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to update product. Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -120,6 +122,7 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def delete_product(request, product_id):
@@ -140,7 +143,7 @@ def cache_checkout_data(request):
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
         stripe.PaymentIntent.modify(pid, metadata={
-            
+
             'save_info': request.POST.get('save_info'),
             'username': request.user,
         })
@@ -154,7 +157,7 @@ def cache_checkout_data(request):
 def checkout(request, product_id):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
-    product = get_object_or_404(Product, pk=product_id),
+
     if request.method == 'POST':
         bag = get_object_or_404(Product, pk=product_id),
 
@@ -175,34 +178,35 @@ def checkout(request, product_id):
             order = order_form.save(commit=False)
             pid = request.POST.get('client_secret').split('_secret')[0]
             order.stripe_pid = pid
-            order.original_bag = json.dumps(bag)
+            product = get_object_or_404(Product, pk=product_id)
             order.save()
-            for item_id, item_data in bag.items():
+            for product in bag:
                 try:
-                    product = Product.objects.get(id=item_id)
-                    if isinstance(item_data, int):
+                    product = Product.objects.get(id=product_id)
+                    if isinstance(product, int):
                         order_line_item = OrderLineItem(
                             order=order,
                             product=product,
-                            quantity=item_data,
+                            grand_total=grand_total
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in item_data['items_by_size'].items():
-                            order_line_item = OrderLineItem(
-                                order=order,
-                                product=product,
-                                quantity=quantity,
-                                product_size=size,
-                            )
-                            order_line_item.save()
+                        
+                        order_line_item = OrderLineItem(
+                            order=order,
+                            product=product,
+                               
+                        )
+                        order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your bag wasn't found in our database. "
                         "Please call us for assistance!")
                     )
                     order.delete()
-                    return redirect(reverse('view_bag'))
+                    return redirect(reverse('products'))
+
+
 
             # Save the info to the user's profile if all is well
             request.session['save_info'] = 'save-info' in request.POST
@@ -218,6 +222,8 @@ def checkout(request, product_id):
 
         
         total = bag.price
+        order_total = bag.price
+        grand_total = bag.price
         stripe_total = round(total * 100)
         stripe.api_key = stripe_secret_key
         intent = stripe.PaymentIntent.create(
@@ -225,7 +231,6 @@ def checkout(request, product_id):
             currency=settings.STRIPE_CURRENCY,
             payment_method_types=['card'],
         )
-        print(intent)
 
         # Attempt to prefill the form with any info the user maintains in their profile
         if request.user.is_authenticated:
@@ -256,7 +261,10 @@ def checkout(request, product_id):
         'order_form': order_form,
         'stripe_public_key': stripe_public_key,
         'client_secret': intent.client_secret,
-        'bag':bag
+        'bag':bag,
+        'grand_total': grand_total,
+        'order_total' : order_total,
+        'total' : total
     }
 
     return render(request, template, context)
