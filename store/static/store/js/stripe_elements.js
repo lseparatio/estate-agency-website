@@ -5,18 +5,20 @@
     https://stripe.com/docs/stripe-js
 */
 
+  
 var stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
 var clientSecret = $('#id_client_secret').text().slice(1, -1);
 var stripe = Stripe(stripePublicKey);
-var elements = stripe.elements();
+const elements = stripe.elements();
+
 var style = {
     base: {
-        color: '#000',
-        fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+        color: 'white',
+        border: 'white',
         fontSmoothing: 'antialiased',
-        fontSize: '16px',
+        fontSize: '21px',
         '::placeholder': {
-            color: '#aab7c4'
+            color: 'white'
         }
     },
     invalid: {
@@ -24,8 +26,11 @@ var style = {
         iconColor: '#dc3545'
     }
 };
-var card = elements.create('card', { style: style });
+
+var card = elements.create('card', {style: style});
 card.mount('#card-element');
+
+
 
 // Handle realtime validation errors on the card element
 card.addEventListener('change', function (event) {

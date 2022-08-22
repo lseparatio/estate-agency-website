@@ -15,44 +15,43 @@
 {% endblock %}
 
 {% block content %}
-<div class="overlay"></div>
-<div class="container">
-    <div class="row">
+
+<div class="container center text-white mt-4">
+    <div class="row  background-transparent">
         <div class="col">
-            <hr>
-            <h2 class="logo-font mb-4">Checkout</h2>
-            <hr>
+            <h2 class="logo-font mb-4 pt-4 pb-4">Checkout</h2>
         </div>
+
     </div>
 
-    <div class="row">
+    <div class="row background-transparent pt-4">
         <div class="col-12 col-lg-6 order-lg-last mb-5">
-            
+
             <div class="row">
                 <div class="col-7 offset-2">
-                    <p class="mb-1 mt-0 small text-muted">Item</p>
+                    <p class="mb-1 mt-0 small text-white">Item</p>
                 </div>
                 <div class="col-3 text-right">
-                    <p class="mb-1 mt-0 small text-muted">Subtotal</p>
+                    <p class="mb-1 mt-0 small text-white">Subtotal</p>
                 </div>
             </div>
-           
+
             <div class="row">
                 <div class="col-2 mb-1">
-                    
-                       
-                        <img class="w-100" src="{{ bag.primary_image.url }}" alt="{{ bag.name }}">
+
+
+                    <img class="w-100" src="{{ bag.primary_image.url }}" alt="{{ bag.name }}">
                 </div>
                 <div class="col-7">
                     <p class="my-0"><strong>{{ bag.name }}</strong></p>
                 </div>
                 <div class="col-3 text-right">
-                    <p class="my-0 small text-muted">$ {{ bag.price }}</p>
+                    <p class="my-0 small text-white">$ {{ bag.price }}</p>
                 </div>
             </div>
-            
+
             <hr class="my-0">
-            <div class="row text-black text-right">
+            <div class="row text-white text-right">
                 <div class="col-7 offset-2">
                     <p class="my-0">Order Total:</p>
                     <p class="my-0">Grand Total:</p>
@@ -64,23 +63,23 @@
             </div>
         </div>
         <div class="col-12 col-lg-6">
-            <p class="text-muted">Please fill out the form below to complete your order</p>
+            <p class="text-white">Please fill out the form below to complete your order</p>
             <form action="{% url 'checkout' bag.id %}" method="POST" id="payment-form">
                 {% csrf_token %}
                 <fieldset class="rounded px-3 mb-5">
-                    <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
+                    <legend class="fieldset-label small text-white px-2 w-auto">Details</legend>
                     {{ order_form.full_name }}
                     {{ order_form.email }}
                 </fieldset>
                 <fieldset class="rounded px-3 mb-5">
-                    <legend class="fieldset-label small text-black px-2 w-auto">Delivery</legend>
+                    <legend class="fieldset-label small text-white px-2 w-auto">Delivery</legend>
                     {{ order_form.phone_number }}
                     {{ order_form.street_address1 }}
                     {{ order_form.street_address2 }}
                     {{ order_form.town_or_city }}
-                    {{ order_form.county  }}
-                    {{ order_form.postcode  }}
-                    {{ order_form.country  }}
+                    {{ order_form.county }}
+                    {{ order_form.postcode }}
+                    {{ order_form.country }}
                     <div class="form-check form-check-inline float-right mr-0">
                         {% if user.is_authenticated %}
                         <label class="form-check-label" for="id-save-info">Save this delivery information to my
@@ -96,7 +95,7 @@
                     </div>
                 </fieldset>
                 <fieldset class="px-3">
-                    <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
+                    <legend class="fieldset-label small text-white px-2 w-auto">Payment</legend>
                     <!-- A Stripe card element will go here -->
                     <div class="mb-3" id="card-element"></div>
                     <!-- Used to display form errors -->
@@ -108,7 +107,7 @@
                 <div class="submit-button text-right mt-5 mb-2">
 
                     <button id="submit-button" class="btn btn-black rounded-0">
-                        <span class="font-weight-bold">Complete Order</span>
+                        <span class="font-weight-bold text-white">Complete Order</span>
                         <span class="icon">
                             <i class="fas fa-lock"></i>
                         </span>
