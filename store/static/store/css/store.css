@@ -144,3 +144,7 @@ img[src] {
 #payment-element {
     margin-bottom: 24px;
 }
+
+.thank-you-background {
+    background-color: var(--forms-shadow);
+}
