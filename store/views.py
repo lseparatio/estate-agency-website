@@ -187,7 +187,7 @@ def checkout(request, product_id):
                         order_line_item = OrderLineItem(
                             order=order,
                             product=product,
-                            grand_total=grand_total
+                            
                         )
                         order_line_item.save()
                     else:
@@ -195,7 +195,7 @@ def checkout(request, product_id):
                         order_line_item = OrderLineItem(
                             order=order,
                             product=product,
-                            grand_total=grand_total
+                            
                                
                         )
                         order_line_item.save()
