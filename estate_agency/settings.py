@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    "anymail",
 
     'allauth',
     'allauth.account',
@@ -180,6 +181,7 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 if os.environ.get('DEVELOPMENT') == 'True':
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
