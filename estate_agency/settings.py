@@ -65,7 +65,7 @@ ACCOUNT_FORMS = {
 'login' : 'accounts.forms.CustomLoginForm',
 }
 
-SITE_ID = 1
+SITE_ID = 1 
 
 MIDDLEWARE = [
     # Simplified static file serving.
