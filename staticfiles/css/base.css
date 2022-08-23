@@ -1,0 +1,250 @@
+:root {
+    --primary-color: #feb012;
+    --nav-background: rgba(0, 40, 64, 0.15);
+    --primary-text: white;
+    --forms-shadow: rgba(0, 40, 64, 0.7);
+    --buttons-text: #120909;
+    --box-shadows: 0 0 0 0.2rem rgba(254, 176, 18, 0.25);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/static/img/pexels-binyamin-mellish-186078.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header,
+nav {
+    background-color: var(--nav-background);
+}
+
+.display-none {
+    display: none !important;
+}
+
+#search-button,
+#account-button,
+#login-button-desktop,
+#search-button-desktop {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: none !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler {
+    border: 1px solid var(--primary-text);
+    box-shadow: none !important;
+}
+
+#navbarSupportedContent ul li a {
+    color: var(--primary-text);
+}
+
+#loginSidebar,
+.nav-canava-colapsed,
+#bookValuation,
+#searchSidebar {
+    border: var(--primary-text) 2px solid;
+    border-radius: 25px;
+    background-color: var(--forms-shadow);
+}
+
+.second-nav {
+    background-color: var(--primary-color) !important;
+    color: var(--primary-text) !important;
+}
+
+.second-nav ul li a {
+    color: var(--buttons-text) !important;
+}
+
+.second-nav ul li a:hover {
+    color: var(--primary-text) !important;
+}
+
+.nav-mobile-canava {
+    text-align: center !important;
+    background-color: var(--forms-shadow) !important;
+    border-radius: 25px !important;
+}
+
+.nav-mobile-canava ul li a {
+    color: var(--primary-text) !important;
+}
+
+.nav-mobile-canava ul li a:hover {
+    color: var(--primary-color) !important;
+}
+
+#menu-hr {
+    border: 5px solid var(--primary-color);
+    color: var(--primary-text);
+    border-radius: 5px;
+}
+
+.btn-contact,
+.btn-book-evaluation {
+    background-color: var(--primary-color) !important;
+    color: var(--buttons-text) !important;
+    box-shadow: var(--box-shadows);
+}
+
+.btn-contact:hover,
+.btn-book-evaluation:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--primary-text) !important;
+    border: 1px solid var(--primary-text);
+}
+
+#contact-links a,
+.mail-link {
+    color: var(--primary-text) !important;
+}
+
+#contact-links a:hover,
+.mail-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.link-unstiled {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+#pills-login-tab.active,
+#pills-register-tab.active,
+#pills-selling-tab.active,
+#pills-letting-tab.active {
+    background-color: var(--primary-color) !important;
+    color: var(--buttons-text) !important;
+}
+
+#pills-login-tab.active:hover,
+#pills-register-tab.active:hover,
+#pills-selling-tab.active:hover,
+#pills-letting-tab.active:hover {
+    color: var(--primary-text) !important;
+}
+
+#pills-login-tab,
+#pills-register-tab,
+#pills-selling-tab,
+#pills-letting-tab {
+    color: var(--primary-text) !important;
+    border: 1px solid var(--primary-text) !important;
+}
+
+#pills-login-tab:hover,
+#pills-register-tab:hover,
+#pills-selling-tab:hover,
+#pills-letting-tab:hover {
+    color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color) !important;
+}
+
+#pills-register p,
+#pills-login p {
+    color: var(--primary-text);
+}
+
+.welcome {
+    padding-top: 10vh;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.welcome h1 {
+    color: var(--primary-text);
+}
+
+.padding-top {
+    padding-top: 3vh;
+}
+
+/*
+This is the color of close button. To manipulate search for fill: and change
+%23 -meanig '#' and : cd994f your prefered HEX color
+*/
+.btn-close {
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+}
+
+.register-button,
+.login-button,
+.forgot-button {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--buttons-text)
+}
+
+.register-button:hover,
+.login-button:hover,
+.forgot-button:hover {
+    color: var(--primary-text) !important;
+}
+
+#signup_form,
+#login-custom {
+    color: var(--primary-text) !important;
+}
+
+#signup_form input {
+    border-color: var(--primary-color) !important;
+    box-shadow: var(--box-shadows);
+}
+
+#signup_form input:focus {
+    border: 2px solid var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: var(--box-shadows);
+}
+
+.forgot-button,
+.register-button {
+    margin-top: 10px;
+}
+
+.login-container {
+    background-color: var(--forms-shadow);
+    margin-top: 5vh;
+    padding-bottom: 5vh;
+    border-radius: 25px;
+}
+
+.login-container h1,
+.login-container label {
+    color: var(--primary-text)
+}
+
+.tooltip-inner {
+    background-color: #2f4fff;
+    box-shadow: 0px 0px 4px black;
+    opacity: 1 !important;
+}
+.tooltip.bs-tooltip-right .tooltip-arrow::before {
+    border-right-color: #2f4fff !important;
+}
+.tooltip.bs-tooltip-left .tooltip-arrow::before {
+    border-left-color: #2f4fff !important;
+}
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: #2f4fff !important;
+}
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #2f4fff !important;
+}
