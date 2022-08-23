@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'captcha',
     'home',
-    'accounts',
+    'accounts', 
     'store',
     'contact',
     'django_countries',
