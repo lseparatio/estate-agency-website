@@ -16,26 +16,26 @@ form_login = CustomLoginForm()
 def profile(request):
     """ Display the user's profile. """
     profile = get_object_or_404(UserProfile, user=request.user)
-
+    
     if request.method == 'POST':
-        form = UserProfileForm(request.POST, instance=profile)
-        if form.is_valid():
-            form.save()
+        form_profile = UserProfileForm(request.POST, instance=profile)
+        if form_profile.is_valid():
+            form_profile.save()
             messages.success(request, 'Profile updated successfully')
         else:
             messages.error(
                 request, 'Update failed. Please ensure the form is valid.')
     else:
-        form = UserProfileForm(instance=profile)
+        form_profile = UserProfileForm(instance=profile)
     orders = profile.orders.all()
 
     template = 'accounts/account.html'
     context = {
-        'form': form,
+        'form_profile': form_profile,
         'orders': orders,
         'on_profile_page': True,
         'form': form_singup,
-        'form_login': form_login
+        'form_login': form_login,
     }
 
     return render(request, template, context)
