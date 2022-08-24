@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    "anymail",
 
     'allauth',
     'allauth.account',
@@ -188,7 +187,7 @@ if os.environ.get('DEVELOPMENT') == 'True':
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     
-    EMAIL_USE_TLS = True    
+    EMAIL_USE_SSL = True    
     EMAIL_PORT = os.environ.get('EMAIL_PORT')
     EMAIL_HOST = os.environ.get('EMAIL_HOST')
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
