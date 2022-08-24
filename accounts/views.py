@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from .models import UserProfile
-from .forms import UserProfileForm
+from accounts.forms import UserProfileForm
 from store.models import Order
 from accounts.forms import CustomSignupForm
 from accounts.forms import CustomLoginForm
