@@ -1,10 +1,10 @@
-<form class="row row-cols-lg-auto g-3 align-items-center  pt-3 pb-3 justify-content-center"
-    id="holliday-lets-search-form" method="GET" action="{% url 'products' %}">
+<form method="GET" action="{% url 'products' %}?category=holiday_lets" class="row row-cols-lg-auto g-3 align-items-center  pt-3 pb-3 justify-content-center"
+    id="holliday-lets-search-form">
 
     <div class="col-12">
         <label class="visually-hidden" for="inlineFormHolidayLetsPostcode">Town or Postcode</label>
         <div class="input-group">
-            <input type="text" class="form-control" id="inlineFormHolidayLetsPostcode" name="" placeholder="Town or Postcode">
+            <input type="text" class="form-control" id="inlineFormHolidayLetsPostcode" name="q" placeholder="Town or Postcode">
         </div>
     </div>
 
@@ -47,6 +47,6 @@
     </div>
 
     <div class="col-12">
-        <a type="submit" class="btn  btn-primary submit col-12">SEARCH</a>
+        <button type="submit" class="btn  btn-primary submit col-12">SEARCH</button>
     </div>
 </form>

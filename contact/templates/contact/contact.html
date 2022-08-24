@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Contact Us" %}{% endblock %}
+
+{% block content %}
+<div class="container-md reset-container col-md-8 col-sm-12 center text-white mt-4 mb-4 pt-4">
+    <div class="row">
+        <div class="col">
+            <h1>{% trans "Contact Us" %}</h1>
+
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary col-12 login-button pt-2 mb-4">{% trans 'Send Us Your Message' %}</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

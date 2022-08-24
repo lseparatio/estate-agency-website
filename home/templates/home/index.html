@@ -19,9 +19,8 @@
         <h1>Welcome to Real Estate</h1>
     </div>
     <div class="col-12 padding-top">
-        <button type="button" class="btn btn-book-evaluation btn-lg" data-bs-toggle="offcanvas"
-            data-bs-target="#bookValuation" aria-controls="bookValuation" aria-label="Book a free Valuation"
-            id="book-valuation">Book a free Valuation</button>
+        <a type="button" class="btn btn-book-evaluation btn-lg"  aria-label="Book a free Valuation"
+            id="book-valuation" href="{% url 'contact' %}">Book a free Valuation</a>
     </div>
 </div>
 
@@ -56,7 +55,7 @@
                     <h5 class="white">Get a free valuation on your home now!</h5>
                 </div>
                 <div class="col-12 col-md-4 text-right pt-4 pb-4 center mr-0 ml-0">
-                    <button type="button" class="btn btn-primary value-button mr-0 ml-0">Value My Home</button>
+                    <a type="button" class="btn btn-primary value-button mr-0 ml-0" href="{% url 'contact' %}">Value My Home</a>
                 </div>
             </div>
         </div>
