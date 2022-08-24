@@ -248,3 +248,8 @@ This is the color of close button. To manipulate search for fill: and change
 .tooltip.bs-tooltip-top .tooltip-arrow::before {
     border-top-color: #2f4fff !important;
 }
+
+.reset-container {
+    background-color: var(--forms-shadow);
+    border: #feb012 1px solid;
+}
