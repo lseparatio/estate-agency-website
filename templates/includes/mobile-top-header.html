@@ -11,4 +11,10 @@
         </button>
         {% endif %}
     </li>
+    {% if request.user.is_authenticated %}
+    <li class="nav-item">
+        <a class="btn btn-primary btn-lg logout" type="button" aria-label="Log Out" href="{% url 'account_logout' %}"><i
+                class="fa-solid fa-right-from-bracket"></i></a>
+    </li>
+    {% endif %}
 </ul>

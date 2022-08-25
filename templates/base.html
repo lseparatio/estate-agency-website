@@ -74,8 +74,15 @@
                             aria-label="Account - Login - Register" id="account-button"><i
                                 class="fa-regular fa-user"></i>
                         </button>
-                        {% endif %}
+                        {% endif %}                  
                     </li>
+                    {% if request.user.is_authenticated %}
+                    <li class="list-inline-item">
+                        <a class="btn btn-primary btn-lg logout" type="button" aria-label="Log Out"
+                         href="{% url 'account_logout' %}"><i class="fa-solid fa-right-from-bracket"></i>
+                        </a>
+                    </li>
+                    {% endif %}
                 </ul>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
                     aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">

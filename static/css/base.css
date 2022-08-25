@@ -28,7 +28,9 @@ nav {
     display: none !important;
 }
 
-#search-button,
+.logout,
+.logout:hover,
+.logout:active,
 #account-button,
 #login-button-desktop,
 #search-button-desktop {
