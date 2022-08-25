@@ -253,3 +253,10 @@ This is the color of close button. To manipulate search for fill: and change
     background-color: var(--forms-shadow);
     border: #feb012 1px solid;
 }
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--buttons-text);
+    margin-left: 0px;
+    margin-right: 0px;
+}
