@@ -236,15 +236,19 @@ This is the color of close button. To manipulate search for fill: and change
     box-shadow: 0px 0px 4px black;
     opacity: 1 !important;
 }
+
 .tooltip.bs-tooltip-right .tooltip-arrow::before {
     border-right-color: #2f4fff !important;
 }
+
 .tooltip.bs-tooltip-left .tooltip-arrow::before {
     border-left-color: #2f4fff !important;
 }
+
 .tooltip.bs-tooltip-bottom .tooltip-arrow::before {
     border-bottom-color: #2f4fff !important;
 }
+
 .tooltip.bs-tooltip-top .tooltip-arrow::before {
     border-top-color: #2f4fff !important;
 }

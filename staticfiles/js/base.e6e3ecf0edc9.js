@@ -1,3 +1,5 @@
+//Hack to hide address bar on mobile
+window.scrollTo(0, 1);
 // Set the options that I want
 toastr.options = {
     "closeButton": true,
