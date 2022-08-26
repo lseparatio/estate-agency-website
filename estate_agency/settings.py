@@ -156,7 +156,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Iframe Options
-X_FRAME_OPTIONS = 'SAMEORIGIN'
+X_FRAME_OPTIONS = 'ALLOW'
 
 
 # Internationalization
