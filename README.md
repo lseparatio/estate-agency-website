@@ -73,7 +73,7 @@ Index Screen was designed with 3 main sections:
 
 ![Hero Search Tablet](readme-assets/img/hero-search-tablet.jpg)
 
-- Hero Search Tablet:
+- Hero Search Mobile:
 
 ![Hero Search Mobile](readme-assets/img/hero-search-mobile.jpg)
 
@@ -87,7 +87,7 @@ Index Screen was designed with 3 main sections:
 
 ![Index Welcomeh Tablet](readme-assets/img/index-welcome-tablet.jpg)
 
-- Index Welcome Tablet:
+- Index Welcome Mobile:
 
 ![Index Welcome Mobile](readme-assets/img/index-welcome-mobile.jpg)
 
@@ -103,11 +103,57 @@ Index Screen was designed with 3 main sections:
 
 ![Index Showroom  Tablet](readme-assets/img/index-showroom-tablet.jpg)
 
-- Index Showroom  Tablet:
+- Index Showroom  Mobile:
 
 ![Index Showroom  Mobile](readme-assets/img/index-showroom-mobile.jpg)
 
+### Buying Renting Holiday Lets
 
+- Buying, Renting and Holiday Lets are all the same as design, only product category is changing so i will present only 1. 
+- This pages will accomodate infinite number or products.
 
+- Buying Desktop:
+
+![Buying Desktop](readme-assets/img/buying-desktop.jpg)
+
+- Renting Tablet:
+
+![Renting Tablet](readme-assets/img/renting-tablet.jpg)
+
+- Renting Mobile:
+
+![Renting Mobile](readme-assets/img/renting-mobile.jpg)
+
+### Login
+
+- Login pages are 2. 1 from all-auth and styled and 1 completly custom. As you will observe rechapcha was implemented to keep spam away.
+
+- Login custom:
+
+- Login Custom Desktop:
+
+![Login Custom Desktop](readme-assets/img/login-custom-desktop.jpg)
+
+- Login Custom Tablet:
+
+![Login Custom Tablet](readme-assets/img/login-custom-tablet.jpg)
+
+- Login Custom Mobile:
+
+![Login Custom Mobile](readme-assets/img/login-custom-mobile.jpg)
+
+- Login AllAuth:
+
+- Login AllAuth Desktop:
+
+![Login AllAuth Desktop](readme-assets/img/login-allauth-desktop.jpg)
+
+- Login AllAuth Tablet:
+
+![Login AllAuth Tablet](readme-assets/img/login-allauth-tablet.jpg)
+
+- Login AllAuth Mobile:
+
+![Login AllAuth Mobile](readme-assets/img/login-allauth-mobile.jpg)
 
 </details>
