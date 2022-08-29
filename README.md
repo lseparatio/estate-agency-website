@@ -190,4 +190,33 @@ Index Screen was designed with 3 main sections:
 - Register AllAuth Mobile:
 
 ![Register AllAuth Mobile](readme-assets/img/register-allauth-mobile.jpg)
+
+### Checkout page
+
+- Checkout Desktop
+
+![Checkout Desktop](readme-assets/img/checkout-page-desktop.jpg)
+
+- Checkout Tablet:
+
+![Checkout Tablet](readme-assets/img/checkout-page-tablet.jpg)
+
+- Checkout Mobile:
+
+![Checkout Mobile](readme-assets/img/checkout-page-mobile.jpg)
+
+### Thank you page
+
+- Thank you Desktop
+
+![Thank you Desktop](readme-assets/img/thank-you-desktop.jpg)
+
+- Thank you Tablet:
+
+![Thank you Tablet](readme-assets/img/thank-you-tablet.jpg)
+
+- Thank you Mobile:
+
+![Checkout Mobile](readme-assets/img/thank-you-mobile.jpg)
+
 </details>
