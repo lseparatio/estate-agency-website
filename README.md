@@ -246,4 +246,18 @@ If user is superuser(admin) then on products will show an edit and delete button
 
 ![edit-delete-buttons](readme-assets/img/edit-delete-button.jpg)
 
+### Contact Page
+
+- Contact Desktop
+
+![Contact Desktop](readme-assets/img/contact-desktop.jpg)
+
+- Contact Tablet:
+
+![Contact Tablet](readme-assets/img/contact-tablet.jpg)
+
+- Contact Mobile:
+
+![Contact Mobile](readme-assets/img/contact-mobile.jpg)
+
 </details>
