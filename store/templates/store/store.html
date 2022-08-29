@@ -121,8 +121,8 @@
                                 {% endif %}
                                 {% endif %}
                                 <div class="col">
-                                    <button
-                                        class="btn btn-primary col-12  pt-2 mt-2 card-footer-button">Contact</button>
+                                    <a
+                                        class="btn btn-primary col-12  pt-2 mt-2 card-footer-button" href="{% url 'contact' %}">Contact</a>
                                 </div>
                             </div>
                             {% if request.user.is_superuser %}

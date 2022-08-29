@@ -223,4 +223,27 @@ Index Screen was designed with 3 main sections:
 
 ![Thank you email](readme-assets/img/thank-you-email.jpg)
 
+### Profile page
+
+- On the profile page user can update billing info and see past orders, as well
+if user is superuser can add a ptroduct. That button will show only for admin.
+
+- Profile Desktop
+
+![Profile Desktop](readme-assets/img/profile-page-desktop.jpg)
+
+- Profile Tablet:
+
+![Profile Tablet](readme-assets/img/profile-page-tablet.jpg)
+
+- Profile Mobile:
+
+![Profile Mobile](readme-assets/img/profile-page-mobile.jpg)
+
+### Admin edit and delete button
+
+If user is superuser(admin) then on products will show an edit and delete button for easy edit and delete.
+
+![edit-delete-buttons](readme-assets/img/edit-delete-button.jpg)
+
 </details>
