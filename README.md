@@ -219,4 +219,8 @@ Index Screen was designed with 3 main sections:
 
 ![Checkout Mobile](readme-assets/img/thank-you-mobile.jpg)
 
+### Thank you email
+
+![Thank you email](readme-assets/img/thank-you-email.jpg)
+
 </details>
