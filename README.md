@@ -261,3 +261,24 @@ If user is superuser(admin) then on products will show an edit and delete button
 ![Contact Mobile](readme-assets/img/contact-mobile.jpg)
 
 </details>
+
+## Wireframes, i used Balsamiq
+
+<details>
+<summary>Click to expand wireframes</summary>
+
+### Index Page
+
+- Index Desktop
+
+![Index Desktop](readme-assets/wireframes/index-desktop.png)
+
+- Index Tablet:
+
+![Index Tablet](readme-assets/wireframes/index-tablet.png)
+
+- Index Mobile:
+
+![Index Mobile](readme-assets/wireframes/index-mobile.png)
+
+</details>
