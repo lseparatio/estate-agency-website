@@ -127,6 +127,7 @@ Index Screen was designed with 3 main sections:
 ### Login
 
 - Login pages are 2. 1 from all-auth and styled and 1 completly custom. As you will observe rechapcha was implemented to keep spam away.
+-What i noticed is that is verry dificult with recgapca resizing...google is not letting you to customise like you whant this rechapcha. This is why in next version i think i will use rechapcha v3 invisible.
 
 - Login custom:
 
@@ -156,4 +157,37 @@ Index Screen was designed with 3 main sections:
 
 ![Login AllAuth Mobile](readme-assets/img/login-allauth-mobile.jpg)
 
+
+### Register
+
+- Register pages are 2. 1 from all-auth and styled and 1 completly custom. As you will observe rechapcha was implemented to keep spam away.
+-What i noticed is that is verry dificult with recgapca resizing...google is not letting you to customise like you whant this rechapcha. This is why in next version i think i will use rechapcha v3 invisible.
+
+- Register custom:
+
+- Register Custom Desktop:
+
+![Register Custom Desktop](readme-assets/img/register-desktop-custom.jpg)
+
+- Register Custom Tablet:
+
+![Register Custom Tablet](readme-assets/img/register-tablet-custom.jpg)
+
+- Register Custom Mobile:
+
+![Register Custom Mobile](readme-assets/img/register-mobile-custom.jpg)
+
+- Register AllAuth:
+
+- Register AllAuth Desktop:
+
+![Register AllAuth Desktop](readme-assets/img/register-allauth-desktop.jpg)
+
+- Register AllAuth Tablet:
+
+![Register AllAuth Tablet](readme-assets/img/register-allauth-tablet.jpg)
+
+- Register AllAuth Mobile:
+
+![Register AllAuth Mobile](readme-assets/img/register-allauth-mobile.jpg)
 </details>
