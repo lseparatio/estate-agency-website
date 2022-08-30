@@ -377,9 +377,45 @@ If user is superuser(admin) then on products will show an edit and delete button
 
 ![Product-Detail Desktop-Tablet](readme-assets/wireframes/product-detail-desktop.png)
 
-
 - Product-Detail Mobile
 
 ![Product-Detail Mobile](readme-assets/wireframes/product-detail-mobile.png)
+
+### Register Page
+
+- Register form is simple and mobile first designed and have 1 single design all over the platform
+
+![Register Desktop](readme-assets/wireframes/register-desktop.png)
+
+### Login Page
+
+- Login form is simple and mobile first designed and have 1 single design all over the platform
+
+![Login Desktop](readme-assets/wireframes/login-desktop.png)
+
+### Profile Page
+
+- Profile Desktop
+
+![Profile Desktop](readme-assets/wireframes/profile-page.png)
+
+- Profile Tablet-Mobile
+
+![Profile Tablet-Mobile](readme-assets/wireframes/profile-tablet-mobile.png)
+
+### Add product and Edit product
+
+- This 2 pages have exact same layout only diference is in text add become edit and in backend action is different. 
+This is the reason why is same wireframe for both. As well desktop and tablete design is identical.
+
+
+- Add product and Edit product Desktop - Tablet
+
+![Add product and Edit product Desktop](readme-assets/wireframes/add-product-desktop.png)
+
+- Add product and Edit product Mobile
+
+![Add product and Edit product Mobile](readme-assets/wireframes/add-product-mobile.png)
+
 
 </details>
