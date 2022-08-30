@@ -355,4 +355,31 @@ If user is superuser(admin) then on products will show an edit and delete button
 
 ![Buying-Renting-Holiday-Lets Mobile](readme-assets/wireframes/buying-mobile.png)
 
+### Contact Page
+
+- Contact Page Desktop
+
+![Contact Page Desktop](readme-assets/wireframes/contact-desktop.png)
+
+- Contact Page Tablet
+
+![Contact Page Tablet](readme-assets/wireframes/contact-tablet.png)
+
+- Contact Page Mobile
+
+![Contact Page Mobile](readme-assets/wireframes/contact-mobile.png)
+
+### Product-Detail Page
+
+- Product Detail page can accomodate betwen 1-12 extra images.
+
+- Product-Detail Desktop-Tablet
+
+![Product-Detail Desktop-Tablet](readme-assets/wireframes/product-detail-desktop.png)
+
+
+- Product-Detail Mobile
+
+![Product-Detail Mobile](readme-assets/wireframes/product-detail-mobile.png)
+
 </details>
