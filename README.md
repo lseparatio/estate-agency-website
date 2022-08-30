@@ -290,6 +290,20 @@ If user is superuser(admin) then on products will show an edit and delete button
 
 ![Edit mobile](readme-assets/img/edit-product-mobile.jpg)
 
+### Single Product Page
+
+-  Single Product Desktop
+
+![Single Product Desktop](readme-assets/img/single-product-desktop.jpg)
+
+-  Single Product Tablet
+
+![Single Product Tablet](readme-assets/img/single-product-tablet.jpg)
+
+-  Single Product Mobile
+
+![Single Product Mobile](readme-assets/img/single-product-mobile.jpg)
+
 ### Contact Page
 
 - Contact Desktop
