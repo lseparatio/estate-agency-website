@@ -246,7 +246,8 @@ If user is superuser(admin) then on products will show an edit and delete button
 
 ![edit-delete-buttons](readme-assets/img/edit-delete-button.jpg)
 
-## Add Product
+### Add Product
+
 - Add product page is for admins only and have all required fields and can be added up to 12 images extra. Imges have a previev as they are selected.
 
 - Add Product desktop
@@ -264,6 +265,30 @@ If user is superuser(admin) then on products will show an edit and delete button
 - Add Product mobile
 
 ![Add Desktop](readme-assets/img/add-product-mobile.jpg)
+
+### Edit Product
+
+- Edit product page is verry similar as add product like design but is fetching specific product detail from database and populate the fields. If a Field is not changed will not be updated. 
+
+- Edit product desktop 
+
+![Edit Desktop](readme-assets/img/edit-product1-desktop.jpg)
+
+![Edit Desktop](readme-assets/img/edit-product2-desktop.jpg)
+
+![Edit Desktop](readme-assets/img/edit-product3-desktop.jpg)
+
+![Edit Desktop](readme-assets/img/edit-product4-desktop.jpg)
+
+- Edit product tablet 
+
+![Edit Tablet](readme-assets/img/edit-product1-tablet.jpg)
+
+![Edit Tablet](readme-assets/img/edit-product2-tablet.jpg)
+
+- Edit product mobile
+
+![Edit mobile](readme-assets/img/edit-product-mobile.jpg)
 
 ### Contact Page
 
