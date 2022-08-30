@@ -246,6 +246,25 @@ If user is superuser(admin) then on products will show an edit and delete button
 
 ![edit-delete-buttons](readme-assets/img/edit-delete-button.jpg)
 
+## Add Product
+- Add product page is for admins only and have all required fields and can be added up to 12 images extra. Imges have a previev as they are selected.
+
+- Add Product desktop
+
+![Add Desktop](readme-assets/img/add-product1-desktop.jpg)
+
+![Add Desktop](readme-assets/img/add-product2-desktop.jpg)
+
+- Add Product tablet
+
+![Add Desktop](readme-assets/img/add-product1-tablet.jpg)
+
+![Add Desktop](readme-assets/img/add-product2-tablet.jpg)
+
+- Add Product mobile
+
+![Add Desktop](readme-assets/img/add-product-mobile.jpg)
+
 ### Contact Page
 
 - Contact Desktop
@@ -280,5 +299,21 @@ If user is superuser(admin) then on products will show an edit and delete button
 - Index Mobile:
 
 ![Index Mobile](readme-assets/wireframes/index-mobile.png)
+
+### Buying-Renting-Holiday-Lets Page
+
+- This 3 pages have same design
+
+- Buying-Renting-Holiday-Lets Desktop
+
+![Buying-Renting-Holiday-Lets Desktop](readme-assets/wireframes/buying-desktop.png)
+
+- Buying-Renting-Holiday-Lets Tablet:
+
+![Buying-Renting-Holiday-Lets Tablet](readme-assets/wireframes/buying-tablet.png)
+
+- Buying-Renting-Holiday-Lets Mobile:
+
+![Buying-Renting-Holiday-Lets Mobile](readme-assets/wireframes/buying-mobile.png)
 
 </details>
