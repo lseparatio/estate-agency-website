@@ -497,6 +497,14 @@ This is the reason why is same wireframe for both. As well desktop and tablete d
 - Edit Product Page
 
 ![Edit Product Page](readme-assets/lighthouse-tests/mobile/edit-product-mobile.jpg) 
+
+- Checkout Page
+
+![Checkout Page](readme-assets/lighthouse-tests/mobile/checkout-mobile.jpg) 
+
+- Order Confirmation Page
+
+![Order Confirmation Page](readme-assets/lighthouse-tests/mobile/order-confirmation-mobile.jpg) 
 </details>
 
 #### Desktop Tests
@@ -545,4 +553,14 @@ This is the reason why is same wireframe for both. As well desktop and tablete d
  As you will see in print screen best practices score is droping because some images are landscape and some portrait. So improve all you need to so wen upload images make scure all are same orientation.
 
 ![Edit Product Page](readme-assets/lighthouse-tests/desktop/edit-product-desktop.jpg) 
+
+- Checkout Page
+
+![Checkout Page](readme-assets/lighthouse-tests/desktop/checkout-desktop.jpg) 
+
+- Order Confirmation Page
+
+![Order Confirmation Page](readme-assets/lighthouse-tests/desktop/order-confirmation-desktop.jpg)
+
 </details>
+
