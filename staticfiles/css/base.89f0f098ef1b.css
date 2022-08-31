@@ -32,6 +32,11 @@ nav {
 .logout:hover,
 .logout:active,
 #account-button,
+.account-button,
+.account-button:focus,
+.account-button:visited,
+.account-button:hover,
+.account-button:active,
 #login-button-desktop,
 #search-button-desktop {
     background-color: rgba(0, 0, 0, 0);

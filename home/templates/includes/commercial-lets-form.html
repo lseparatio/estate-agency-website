@@ -1,8 +1,8 @@
 <form method="GET" action="{% url 'products' %}?category=lettings" class="row row-cols-lg-auto g-3 align-items-center  pt-3 pb-3 justify-content-center"
-    id="commercia-llets-search-form" method="GET" action="{% url 'products' %}">
+    id="commercia-llets-search-form">
 
     <div class="col-12">
-        <label class="visually-hidden" for="commerciaLletsPostcode">Town or Postcode</label>
+        <label for="commerciaLletsPostcode" class="sr-only sr-only-focusable">Town or Postcode</label>
         <div class="input-group">
             <input type="text" class="form-control" id="commerciaLletsPostcode" placeholder="Town or Postcode" name="q"> 
         </div>

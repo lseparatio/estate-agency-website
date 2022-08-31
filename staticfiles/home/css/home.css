@@ -116,13 +116,19 @@
 
 .value-button {
     background-color: var(--primary-color-home);
-    border: 1px solid var(--primary-text-home);
+    border: 1px solid var(--buttons-text);
+    color: var(--buttons-text);
+
 }
 
 .value-button:hover {
     background-color: var(--primary-text-home);
     border: 1px solid var(--buttons-text-home);
     color: var(--buttons-text-home);
+}
+
+.get-evaluation {
+    color: var(--buttons-text);
 }
 
 .product-display {

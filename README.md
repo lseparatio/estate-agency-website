@@ -417,5 +417,49 @@ This is the reason why is same wireframe for both. As well desktop and tablete d
 
 ![Add product and Edit product Mobile](readme-assets/wireframes/add-product-mobile.png)
 
+</details>
+
+## Tools / Technologies
+
+- Django
+- Visual Studio Code
+- HTML
+- CSS
+- JavaScript
+- jQuery 3.6.0
+- toastr.js
+- jQuery UI 1.13.1
+- Python
+- GIMP
+- Microsoft Paint
+- Bootstrap 5.1.3
+- FontAwesome
+- Ubuntu 20.04 on WSL on Win 10 64bit
+- Virtual Enviroments
+- GIT, GitHub, Heroku, Heroku CLI
+- AWS - S3 Buckets for static files
+- Stripe
+- PostgreSQL
+
+## Images
+
+- Images was taken from: <https://www.pexels.com/>
+
+## Testing
+
+### Responsive Design Checker (Passing all checks)
+
+<a href="https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Festate-agency-website.herokuapp.com%2F&width=1400&height=700" rel="noopener" target="_blank">Click To See</a>
+
+### LightHouse Tests
+
+#### Mobile Tests
+
+<details>
+<summary>Click To Expand Mobile Tests</summary>
+
+- Index Page 
+
+![Index Page](readme-assets/lighthouse-tests/mobile/index-mobile.jpg)
 
 </details>
