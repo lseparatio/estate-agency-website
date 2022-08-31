@@ -19,7 +19,7 @@
         <h1>Welcome to Real Estate</h1>
     </div>
     <div class="col-12 padding-top">
-        <a type="button" class="btn btn-book-evaluation btn-lg"  aria-label="Book a free Valuation"
+        <a class="btn btn-book-evaluation btn-lg"  aria-label="Book a free Valuation"
             id="book-valuation" href="{% url 'contact' %}">Book a free Valuation</a>
     </div>
 </div>
@@ -28,7 +28,7 @@
     {% include 'includes/base-search-form.html' %}
 </div>
 
-<section class="presentation mt-4 mr-0 pr-0 welcome-to-let-in">
+<div class="presentation mt-4 mr-0 pr-0 welcome-to-let-in">
     <div class="row mt-4 welcome-to-let-in">
         <div class="col-12 col-md-5 center pt-4 pb-4 welcome-to-let-in ">
             <img class="keys rounded mx-auto d-block" src="{% static 'home/img/pexels-oleksandr-pidvalnyi-7599735.jpg' %}"
@@ -55,18 +55,18 @@
                     <h5 class="get-evaluation">Get a free valuation on your home now!</h5>
                 </div>
                 <div class="col-12 col-md-4 text-right pt-4 pb-4 center mr-0 ml-0">
-                    <a type="button" class="btn btn-primary value-button mr-0 ml-0" href="{% url 'contact' %}">Value My Home</a>
+                    <a class="btn btn-primary value-button mr-0 ml-0" href="{% url 'contact' %}">Value My Home</a>
                 </div>
             </div>
         </div>
     </div>
-</section>
-<section class="mr-0 ml-0 mt-4 product-display">
+</div>
+<div class="mr-0 ml-0 mt-4 product-display">
     {% include 'includes/product-display-selector.html' %}
     <div class="col-12 padding-top center">
-        <a type="button" class="btn btn-book-evaluation btn-lg mb-4" href="{% url 'products' %}"  aria-label="See all properties" >See all properties</a>
+        <a class="btn btn-book-evaluation btn-lg mb-4" href="{% url 'products' %}"  aria-label="See all properties" >See all properties</a>
     </div>
-</section>
+</div>
 {% endblock %}
 
 {% block extra_js %}
