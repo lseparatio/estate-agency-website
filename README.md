@@ -709,7 +709,7 @@ And your app will be deployed to Heroku.
 
 - Congratulations your app is up and running on url provided by Heroku!
 
-- Materialize - For well documented css framework
+- Bootstrap - For well documented css framework
 - Pexels - For images
 - GIMP - For Image processing
 - Favicon.io - For Favicon
