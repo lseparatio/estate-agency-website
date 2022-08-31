@@ -490,6 +490,10 @@ This is the reason why is same wireframe for both. As well desktop and tablete d
 
 ![Individual Product Page](readme-assets/lighthouse-tests/mobile/individual-product-mobile.jpg) 
 
+- Add Product Page
+
+![Add Product Page](readme-assets/lighthouse-tests/mobile/add-product-mobile.jpg) 
+
 </details>
 
 #### Desktop Tests
@@ -528,5 +532,9 @@ This is the reason why is same wireframe for both. As well desktop and tablete d
 - Individual Product Page
 
 ![Individual Product Page](readme-assets/lighthouse-tests/desktop/individual-product-desktop.jpg) 
+
+- Add Product Page
+
+![Add Product Page](readme-assets/lighthouse-tests/desktop/add-product-desktop.jpg) 
 
 </details>
