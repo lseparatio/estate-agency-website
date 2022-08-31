@@ -20,7 +20,7 @@
                         {% if product.primary_image %}
 
                         <a href="{% url 'product_detail' product.id %}">
-                            <img class="card-img-top " src="{{ product.primary_image.url }}" alt="{{ product.name }}">
+                            <img class="card-img-top " src="{{ product.primary_image.url }}" alt="{{ product.name }}" loading="lazy">
 
                         </a>
 

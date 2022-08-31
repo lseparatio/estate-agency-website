@@ -1,14 +1,14 @@
 <form method="GET" action="{% url 'products' %}?category=lettings" class="row row-cols-lg-auto g-3 align-items-center  pt-3 pb-3 justify-content-center" id="residential-lets-form">
 
     <div class="col-12">
-        <label class="visually-hidden" for="residentialLetsPostcode">Town or Postcode</label>
+        <label class="sr-only sr-only-focusable" for="residentialLetsPostcode">Town or Postcode</label>
         <div class="input-group">
             <input type="text" class="form-control" id="inlineFormInputGroupPostcode" placeholder="Town or Postcode" name="q">
         </div>
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="residentialLetsType">Property Type</label>
+        <label class="sr-only sr-only-focusable" for="residentialLetsType">Property Type</label>
         <select class="form-select" id="residentialLetsType">
             <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
             {% include 'includes/property-type-options.html' %}
@@ -16,7 +16,7 @@
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="residentialLetsMin">£ Min</label>
+        <label class="sr-only sr-only-focusable" for="residentialLetsMin">£ Min</label>
         <select class="form-select" id="residentialLetsMin">
             <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
             {% include 'includes/min-price-options.html' %}
@@ -24,7 +24,7 @@
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="residentialLetsMax">£ Max</label>
+        <label class="sr-only sr-only-focusable" for="residentialLetsMax">£ Max</label>
         <select class="form-select" id="residentialLetsMax">
             <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
             {% include 'includes/max-price-options.html' %}
@@ -32,7 +32,7 @@
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="residentialLetsMinBeds">Min Beds</label>
+        <label class="sr-only sr-only-focusable" for="residentialLetsMinBeds">Min Beds</label>
         <select class="form-select" id="residentialLetsMinBeds">
             <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
             {% include 'includes/min-beds-options.html' %}
@@ -40,7 +40,7 @@
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="residentialLetsMaxBeds">Max Beds</label>
+        <label class="sr-only sr-only-focusable" for="residentialLetsMaxBeds">Max Beds</label>
         <select class="form-select" id="residentialLetsMaxBeds">
             <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
             {% include 'includes/max-beds-options.html' %}

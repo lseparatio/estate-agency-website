@@ -2,28 +2,28 @@
     id="holliday-lets-search-form">
 
     <div class="col-12">
-        <label class="visually-hidden" for="inlineFormHolidayLetsPostcode">Town or Postcode</label>
+        <label class="sr-only sr-only-focusable" for="inlineFormHolidayLetsPostcode">Town or Postcode</label>
         <div class="input-group">
             <input type="text" class="form-control" id="inlineFormHolidayLetsPostcode" name="q" placeholder="Town or Postcode">
         </div>
     </div>
 
     <div class="col-12 col-lg-2">
-        <label class="visually-hidden" for="inlineFormInputGroupCheckIn">Check-in</label>
+        <label class="sr-only sr-only-focusable" for="inlineFormInputGroupCheckIn">Check-in</label>
         <div class="input-group">
             <input type="text" class="form-control" id="inlineFormInputGroupCheckIn" placeholder="Check-in" readonly>
         </div>
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="inlineFormInputGroupCheckOut">Check-out</label>
+        <label class="sr-only sr-only-focusable" for="inlineFormInputGroupCheckOut">Check-out</label>
         <div class="input-group">
             <input type="text" class="form-control" id="inlineFormInputGroupCheckOut" placeholder="Check-out" readonly>
         </div>
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="inlineFormHolidayAdults">Adults</label>
+        <label class="sr-only sr-only-focusable" for="inlineFormHolidayAdults">Adults</label>
         <select class="form-select" id="inlineFormHolidayAdults">
             <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
             {% include 'includes/holiday-lets-adults-options.html' %}
@@ -31,7 +31,7 @@
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="inlineFormHolidayChildren">Children</label>
+        <label class="sr-only sr-only-focusable" for="inlineFormHolidayChildren">Children</label>
         <select class="form-select" id="inlineFormSalesChildren">
             <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
             {% include 'includes/holiday-lets-children-options.html' %}
@@ -39,7 +39,7 @@
     </div>
 
     <div class="col-12">
-        <label class="visually-hidden" for="inlineFormHolidayRooms">Rooms</label>
+        <label class="sr-only sr-only-focusable" for="inlineFormHolidayRooms">Rooms</label>
         <select class="form-select" id="inlineFormHolidayRooms">
             <!--As we need to reuse this options in multiple forms we choose to create include filles.-->
             {% include 'includes/holiday-lets-rooms-options.html' %}
