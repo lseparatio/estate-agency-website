@@ -12,8 +12,7 @@
 
             <form method="post">
                 {% csrf_token %}
-                {{ form.as_p }}
-                
+                {{ form.as_p }}                
                 <div class="form-actions">
                     <button type="submit" class="btn btn-primary col-12 login-button pt-2 mb-4">{% trans 'Send Us Your Message' %}</button>
                 </div>

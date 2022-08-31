@@ -462,4 +462,71 @@ This is the reason why is same wireframe for both. As well desktop and tablete d
 
 ![Index Page](readme-assets/lighthouse-tests/mobile/index-mobile.jpg)
 
+- Buying Page 
+
+![Buying Page](readme-assets/lighthouse-tests/mobile/buying-mobile.jpg) 
+
+- Lettings Page
+
+![Lettings Page](readme-assets/lighthouse-tests/mobile/lettings-mobile.jpg) 
+
+- Contact Page
+
+![Contact Page](readme-assets/lighthouse-tests/mobile/contact-mobile.jpg) 
+
+- Sing-Up Page
+
+![Sing-up Page](readme-assets/lighthouse-tests/mobile/sign-up-mobile.jpg) 
+
+- Sing-In Page
+
+![Sing-In Page](readme-assets/lighthouse-tests/mobile/sign-in-mobile.jpg) 
+
+- Profile Page
+
+![Profile Page](readme-assets/lighthouse-tests/mobile/profile-mobile.jpg) 
+
+- Individual Product Page
+
+![Individual Product Page](readme-assets/lighthouse-tests/mobile/individual-product-mobile.jpg) 
+
+</details>
+
+#### Desktop Tests
+
+<details>
+<summary>Click To Expand Desktop Tests</summary>
+
+- Index Page 
+
+![Index Page](readme-assets/lighthouse-tests/desktop/index-desktop.jpg)
+
+- Buying Page 
+
+![Buying Page](readme-assets/lighthouse-tests/desktop/buying-desktop.jpg) 
+
+- Lettings Page
+
+![Lettings Page](readme-assets/lighthouse-tests/desktop/lettings-desktop.jpg) 
+
+- Contact Page
+
+![Contact Page](readme-assets/lighthouse-tests/desktop/contact-desktop.jpg) 
+
+- Sing-Up Page
+
+![Sing-up Page](readme-assets/lighthouse-tests/desktop/sign-up-desktop.jpg) 
+
+- Sing-In Page
+
+![Sing-In Page](readme-assets/lighthouse-tests/desktop/sign-in-desktop.jpg) 
+
+- Profile Page
+
+![Profile Page](readme-assets/lighthouse-tests/desktop/profile-desktop.jpg) 
+
+- Individual Product Page
+
+![Individual Product Page](readme-assets/lighthouse-tests/desktop/individual-product-desktop.jpg) 
+
 </details>
