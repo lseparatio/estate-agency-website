@@ -614,4 +614,107 @@ My code have no errors, the warnings and errors detected is missing src from ima
 
 ![Contact Page](readme-assets/html-validator/add-product.jpg)
 
+- Check Out Page
+
+Check Out page validator link: <a href="https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Festate-agency-website.herokuapp.com%2Fstore%2Fcheckout%2F2%2F" rel="noopener" target="_blank">Click To See</a>
+
+- 1 Warning but is fake as that div is managed by JavaScript
+
+![Check Out Page](readme-assets/html-validator/checkout.jpg)
+
 </details>
+
+### Css Tests
+
+All CSS tests pass
+
+Validator link: <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Festate-agency-website.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" rel="noopener" target="_blank">Click To See</a>
+
+![CSS Validator](readme-assets/css-validator/css-validator.jpg)
+
+ ### JavaScript Tests
+
+I have 2 javascripts files because i wanted some functions to be available only in index page. And like this i avoided some console logs errors.
+
+- Base JS
+
+![Base JS Validator](readme-assets/js-validator/base.jpg)
+
+- Home
+
+![Home JS Validator](readme-assets/js-validator/home.jpg)
+
+## Deployment
+
+- For This script you will need an account on Heroku <https://heroku.com>
+For This script you will need an postgresql database. You can get one from Heroku for free at this time.
+- In top menu press CODE > Download ZIP or clone the project in VS Code 
+- In your system you need to have to have locally installed: Python 3.10.4, pip3, GIT, Heroku Cli.
+- I am using a development environment composet like: Win 10 64 Bit, Python 3.10.6, WSL - Ubuntu:20.04. On Ubuntu: VENV, GIT, HEROKU CLI. VS Code is in Windows and is accesing Ubuntu enviroment remote.
+I choose to use this setup to benefit from the best tools from Windows and Ubuntu.
+To setup your env like this you can use this tutorial: <https://docs.microsoft.com/en-us/windows/wsl/install>
+
+- Once your development  env is ready and you clone the script from GitHub you need to install all requirements. This can be found in Requirements.txt file. to install fast just open a terminal in VS Code and type next comand: 
+
+```
+ pip3 install -r requirements.txt
+```
+
+
+This will install all the required packages.
+
+Now go to env_example.py and copy the file and rename it to: env.py
+- Lets fill the env with required stuff:
+Create a secret key: <https://miniwebtool.com/django-secret-key-generator> and add tyhe key to env
+
+- Go to Heroku create an app and a database, after your database is created you can click on Settings and View Credentials.
+You will need the URL, copy and fill in env.
+
+- Rechapcha keys: <https://developers.google.com/recaptcha> open an account create an app and add rechapcha V2, copy provided Keys and add them to env.
+
+- Email settings: If you have an SMTP server you are free to use your credentials, if not you can use for tests gmail smtp.
+This is a good tutorial: <https://kinsta.com/blog/gmail-smtp-server/>
+Take your credentials and add them to env.
+
+- Stripe payment processor: Create an Stripe account on: https://stripe.com/gb
+On right top press swith on test mode. On right side you will see: For Developers.
+Take your test keys and fill them to env.
+
+- AWS S3 for static files. Create an account on:
+<https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Categories=categories%23storage&trk=9845b571-f118-41f9-ae80-53f3364524c4&sc_channel=ps&s_kwcid=AL!4422!3!536394142492!e!!g!!aws%20s3&ef_id=Cj0KCQjwjbyYBhCdARIsAArC6LKnsEYqe3z59jhvh56DtHIZ0J6zCsI7LMOY3RMByszeomIrLNdjow0aAmAMEALw_wcB:G:s&s_kwcid=AL!4422!3!536394142492!e!!g!!aws%20s3&awsf.Free%20Tier%20Types=*all>
+
+Create a bucket, give permisions to files to be public accesible. This will be done with permisions. Wance you done you will receive your secret keys.
+Fill them to env.
+
+At this point your new website shud work on local enviroment. If this is tru lets deploy on heroku.
+- Now to deploy to heroku open your terminal and type:
+```
+heroku login -i
+```
+You will be promted for your login info
+
+```
+git push heroku main -app your_app_name
+```
+And your app will be deployed to Heroku.
+
+- Last steps will be to to in heroku website, access your new created app and go to settings and then scroll the page and click on Reveal Config Vars.
+- Now you will need to copy your variables from env and save them in this place.
+
+![Heroku settings](readme-assets/img/heroku.jpg)
+
+- Make shure you have all variables as in photo.
+
+## Credits / Technologies
+
+- Congratulations your app is up and running on url provided by Heroku!
+
+- Materialize - For well documented css framework
+- Pexels - For images
+- GIMP - For Image processing
+- Favicon.io - For Favicon
+- Google Fonts - For Poppins font.
+- Code Institute - For brilliant lessons from where i learn to do this.
+
+
+## Thank you for reading. For any questions don't hesitate to contact me. Kind Regards, Ionut Zapototchi
