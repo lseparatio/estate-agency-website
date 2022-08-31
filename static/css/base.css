@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background: url('/static/img/pexels-binyamin-mellish-186078.jpg') no-repeat center center fixed;
+    background: url('/static/img/pexels-binyamin-mellish.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
