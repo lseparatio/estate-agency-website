@@ -564,3 +564,17 @@ This is the reason why is same wireframe for both. As well desktop and tablete d
 
 </details>
 
+### HTML Validator Tests
+
+<details>
+<summary>Click to open Validator Tests</summary>
+
+- Index Page
+
+Index page validator link: <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Festate-agency-website.herokuapp.com%2F" rel="noopener" target="_blank">Click To See</a>
+
+My code have no errors, the warnings and errors are comming from code injected by ReChapcha and i have no acces to it.
+
+![Index Page](readme-assets/html-validator/index.jpg)
+
+</details>
